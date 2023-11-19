@@ -1,5 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Marquee from 'react-fast-marquee'
+import BlogCard from '../components/BlogCard'
+import ProductCard from '../components/ProductCard'
 
 const Home = () => {
   return (
@@ -163,16 +166,16 @@ const Home = () => {
               <div className='d-flex gap-30 align-items-center'>
                 <div>
                   <h6>Portable Speakers</h6>
-                  <p>8 Items</p>
+                  <p>7 Items</p>
                 </div>
                 <img src='images/speaker.jpg' alt='camera'/>
               </div>
               <div className='d-flex gap-30 align-items-center'>
                 <div>
-                  <h6>Mobile & Tablets</h6>
+                  <h6>Smartwatches</h6>
                   <p>8 Items</p>
                 </div>
-                <img src='images/camera.jpg' alt='camera'/>
+                <img src='images/watch.jpg' alt='camera'/>
               </div>
               <div className='d-flex gap-30 align-items-center'>
                 <div>
@@ -184,12 +187,69 @@ const Home = () => {
               <div className='d-flex gap-30 align-items-center'>
                 <div>
                   <h6>Accessories</h6>
-                  <p>10 Items</p>
+                  <p>11 Items</p>
                 </div>
                 <img src='images/acc.jpg' alt='camera'/>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <section className='marquee-wrapper py-2'>
+      <div className='container-xxl'>
+        <div className='row'>
+          <div className='col-12'>
+            <div className='marquee-inner-wrapper card-wrapper'>
+              <Marquee className='d-flex'>
+              <div className='mx-4 w-25'>
+                <img src='images/brand-01.png' alt='brand'/>
+              </div>
+              <div className='mx-4 w-25'>
+                <img src='images/brand-02.png' alt='brand'/>
+              </div>
+              <div className='mx-4 w-25'>
+                <img src='images/brand-03.png' alt='brand'/>
+              </div>
+              <div className='mx-4 w-25'>
+                <img src='images/brand-04.png' alt='brand'/>
+              </div>
+              <div className='mx-4 w-25'>
+                <img src='images/brand-05.png' alt='brand'/>
+              </div>
+              <div className='mx-4 w-25'>
+                <img src='images/brand-06.png' alt='brand'/>
+              </div>
+              <div className='mx-4 w-25'>
+                <img src='images/brand-07.png' alt='brand'/>
+              </div>
+              </Marquee>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section className='blog-wrapper py-5 home-wrapper-2'>
+      <div className='container-xxl'>
+        <div className='row'>
+          <div className='col-12'>
+            <h3 className='section-heading'>
+              Featured Collection
+            </h3>
+          </div>
+          <ProductCard/>
+        </div>
+      </div>
+    </section>
+    <section className='blog-wrapper py-5 home-wrapper-2'>
+      <div className='container-xxl'>
+        <div className='row'>
+          <div className='col-12'>
+            <h3 className='section-heading'>
+            Our Latest Blogs
+            </h3>
+          </div>
+          <BlogCard/>
         </div>
       </div>
     </section>

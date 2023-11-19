@@ -13,7 +13,18 @@ a{
 :root{
   --color-088178-el-col:#088178;
   --color-b6aaaa-bg:#b6aaaa;
-  --color-232f3e:#afafaf;
+  --color-232f3e:#ededed;
+}
+.section-heading{
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.card-wrapper{
+  background-color: white;
+  box-shadow: 0 0 10px #0000001a;
+  padding: 15px;
 }
 .form-control:focus{
   box-shadow: none;
@@ -211,7 +222,7 @@ footer .input-group-text{
 .categories{
   background-color: white;
   box-shadow: 0 0 10px #0000001a;
-  padding: 15px;
+  padding: 25px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -221,6 +232,10 @@ footer .input-group-text{
 }
 .categories > div{
 width: 24%;
+padding: 10px 10px 10px 20px;
+}
+.categories >div >div{
+  width: 60%;
 }
 .categories > div:nth-child(1),
 .categories > div:nth-child(2),
@@ -238,3 +253,81 @@ width: 24%;
   border-right: 1px solid #ededed;
 }
 /* HOME PAGE END */
+.marquee-wrapper{
+  background-color: #ededed;
+}
+/* blog part */
+.blog-card{
+  background-color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.blog-card img{
+  border-top-right-radius:10px ;
+  border-top-left-radius:10px ;
+}
+.blog-content{
+  padding: 15px;
+}
+.blog-content .date{
+  font-size: 13px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--color-b6aaaa-bg);
+  padding: 0;
+}
+.blog-content .desc{
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--color-b6aaaa-bg);
+  padding: 0;
+}
+/* end of blog */
+
+
+/* product card */
+.product-card{
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px; 
+  overflow: hidden;
+}
+.product-card:hover .action-bar{
+right: 10px;
+}
+.product-card  .product-details h6{
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--color-088178-el-col);
+  padding: 0;
+}
+.product-card .product-details h5{
+font-size: 15px;
+}
+.product-card .product-details p.price{
+font-size: 16px;
+}
+.action-bar{
+  top: 10%;
+  right: -20px;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+.wishlist-icon{
+  top: 2%;
+  right: 12px;
+}
+/* end of product */
