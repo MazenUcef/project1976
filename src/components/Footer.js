@@ -15,12 +15,12 @@ const Footer = () => {
             </div>
           </div>
           <div className='col-7'>
-            <div class="input-group">
-              <input type="text" class="form-control py-1" 
+            <div className="input-group">
+              <input type="text" className="form-control py-1" 
               placeholder="Your Email Address..." 
               aria-label="Your Email Address..." 
               aria-describedby="basic-addon2"/>
-                <span class="input-group-text p-3" id="basic-addon2">
+                <span className="input-group-text p-3" id="basic-addon2">
                   Subscribe
                 </span>
             </div>
@@ -37,25 +37,25 @@ const Footer = () => {
               <Link className='text-white py-2 mb-1'>Project1976-Org</Link>
               <address className='text-white fs-6'>25 st Solayman Azzmy,<br/>Nozha, cairo<br/>Egypt
               </address>
-              <a href="tel:+201006574217" className='text-white d-block mb-2'>
+              <Link href="tel:+201006574217" className='text-white d-block mb-2'>
               +201006574217
-              </a>
-              <a href='mailto:Hrteam@project1976.com' className='text-white py-2 mb-1'>
+              </Link>
+              <Link href='mailto:Hrteam@project1976.com' className='text-white py-2 mb-1'>
               hrteam@project1976.com
-              </a>
+              </Link>
               <div className='social-icons d-flex align-items-center gap-15'>
-              <a href="www.linkedin.com" className='text-white fs-5'>
+              <Link href="www.linkedin.com" className='text-white fs-5'>
                 <BsLinkedin/>
-              </a>
-              <a href="www.github.com" className='text-white fs-5'>
+              </Link>
+              <Link href="www.github.com" className='text-white fs-5'>
                 <BsGithub/>
-              </a>
-              <a href="www.instagram.com" className='text-white fs-5'>
+              </Link>
+              <Link href="www.instagram.com" className='text-white fs-5'>
                 <BsInstagram/>
-              </a>
-              <a href="www.youtube.com" className='text-white fs-5'>
+              </Link>
+              <Link href="www.youtube.com" className='text-white fs-5'>
                 <BsYoutube/>
-              </a>
+              </Link>
               </div>
             </div>
           </div>

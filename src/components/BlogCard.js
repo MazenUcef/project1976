@@ -6,7 +6,7 @@ const BlogCard = () => {
     <div className='col-3'>
         <div className='blog-card'>
             <div className='card-image'>
-                <img src='images/blog-1.jpg' className='img-fluid' alt='blog'/>
+                <img id='img' src='images/blog-1.jpg' className='img-fluid' alt='blog'/>
             </div>
             <div className='blog-content'>
                 <p className='date'>11 June,2023</p>
@@ -20,7 +20,7 @@ const BlogCard = () => {
     <div className='col-3'>
         <div className='blog-card'>
             <div className='card-image'>
-                <img src='images/blog-2.jpg' className='img-fluid' alt='blog'/>
+                <img id='img' src='images/blog-2.jpg' className='img-fluid' alt='blog'/>
             </div>
             <div className='blog-content'>
                 <p className='date'>11 June,2023</p>
@@ -34,7 +34,7 @@ const BlogCard = () => {
     <div className='col-3'>
         <div className='blog-card'>
             <div className='card-image'>
-                <img src='images/blog-3.jpg' className='img-fluid' alt='blog'/>
+                <img id='img' src='images/blog-3.jpg' className='img-fluid' alt='blog'/>
             </div>
             <div className='blog-content'>
                 <p className='date'>11 June,2023</p>
@@ -48,7 +48,7 @@ const BlogCard = () => {
     <div className='col-3'>
         <div className='blog-card'>
             <div className='card-image'>
-                <img src='images/blog-4.jpg' className='img-fluid' alt='blog'/>
+                <img id='img' src='images/blog-4.jpg' className='img-fluid' alt='blog'/>
             </div>
             <div className='blog-content'>
                 <p className='date'>11 June,2023</p>

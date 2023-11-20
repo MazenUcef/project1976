@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Marquee from 'react-fast-marquee'
 import BlogCard from '../components/BlogCard'
 import ProductCard from '../components/ProductCard'
+import SpecialProducts from '../components/SpecialProducts'
 
 const Home = () => {
   return (
@@ -11,9 +12,9 @@ const Home = () => {
       <div className='container-xxl'>
         <div className='row'>
           <div className='col-6'>
-          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
+          <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
+          <div className="carousel-inner">
+            <div className="carousel-item active">
               <div className='main-banner-content position-relative'>
                 <img src='images/main-banner-1.jpg' className='img-fluid rounde-3' alt=''/>
                 <div className='main-banner-contentt position-absolute '>
@@ -24,7 +25,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-        <div class="carousel-item">
+        <div className="carousel-item">
           <div className='main-banner-content position-relative'>
             <img src='images/main-banner.jpg' className='img-fluid rounde-3' alt=''/>
             <div className='main-banner-contentt position-absolute '>
@@ -36,13 +37,13 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+      <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+      <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Next</span>
       </button>
     </div>
           </div>
@@ -196,6 +197,30 @@ const Home = () => {
         </div>
       </div>
     </section>
+    <section className='featured-wrapper py-5 home-wrapper-2'>
+    <div className='container-xxl'>
+      <div className='row'>
+        <div className='col-12'>
+          <h3 className='section-heading'>
+            Featured Collection
+          </h3>
+        </div>
+        <ProductCard/>
+      </div>
+    </div>
+  </section>
+    <section className='special-wrapper py-5 home-wrapper-2'>
+      <div className='container-xxl'>
+        <div className='row'>
+          <div className='col-12'>
+            <h3 className='section-heading'>Special Products</h3>
+          </div>
+        </div>
+        <div className='row'>
+        <SpecialProducts/>
+        </div>
+      </div>
+    </section>
     <section className='marquee-wrapper py-2'>
       <div className='container-xxl'>
         <div className='row'>
@@ -226,18 +251,6 @@ const Home = () => {
               </Marquee>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <section className='blog-wrapper py-5 home-wrapper-2'>
-      <div className='container-xxl'>
-        <div className='row'>
-          <div className='col-12'>
-            <h3 className='section-heading'>
-              Featured Collection
-            </h3>
-          </div>
-          <ProductCard/>
         </div>
       </div>
     </section>

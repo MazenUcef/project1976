@@ -13,7 +13,7 @@ const Header = () => {
             <p className='text-title mb-0'>Free Shipping Over $100 & Free Returns</p>
             </div>
             <div className='col-6'>
-            <p className='text-end text-title mb-0'>Hotline: <a className='text-title' href='tel:+201006574217'>+201006574217</a></p>
+            <p className='text-end text-title mb-0'>Hotline: <Link className='text-title' href='tel:+201006574217'>+201006574217</Link></p>
             </div>
           </div>
         </div>
@@ -27,12 +27,12 @@ const Header = () => {
               </h2>
             </div>
             <div className='col-5'>
-              <div class="input-group">
-              <input type="text" class="form-control py-2" 
+              <div className="input-group">
+              <input type="text" className="form-control py-2" 
               placeholder="Search Product here..." 
               aria-label="Search Product here..." 
               aria-describedby="basic-addon2"/>
-              <span class="input-group-text p-3" id="basic-addon2">
+              <span className="input-group-text p-3" id="basic-addon2">
               <BsSearch className='seBtn fs-6'/>
               </span>
               </div>
@@ -59,7 +59,7 @@ const Header = () => {
               </div>
               <div>
               <Link className='d-flex align-items-center gap-10 text-white'>
-              <i class="fa-solid fa-cart-shopping fa-2xl text-title"></i>
+              <i className="fa-solid fa-cart-shopping fa-2xl text-title"></i>
               <div className='d-flex flex-column'>
                 <span className='badge bg-white text-dark'>0</span>
                 <p className='text-title dollar mb-0'>$ 0,00</p>
@@ -77,12 +77,12 @@ const Header = () => {
             <div className='col-12'>
               <div className='menu-bottom d-flex align-items-center gap-30'>
                 <div>
-                <div class="dropdown">
+                <div className="dropdown">
                   <button className="btn btn-secondary dropdown-toggle bg-transparent border-0 gap-15 d-flex align-items-center" 
                   type="button" 
                   data-bs-toggle="dropdown" 
                   aria-expanded="false">
-                  <i class="fa-solid fa-filter fa-xl"></i>
+                  <i className="fa-solid fa-filter fa-xl"></i>
                     <span className='me-5 d-inline-block' >Shop Categories</span>
                   </button>
                   
