@@ -4,10 +4,16 @@ import Marquee from 'react-fast-marquee'
 import BlogCard from '../components/BlogCard'
 import ProductCard from '../components/ProductCard'
 import SpecialProducts from '../components/SpecialProducts'
+import ReactStars from 'react-rating-stars-component'
+import Meta from '../components/Meta'
 
 const Home = () => {
+  const ratingChanged = (newRating)=>{
+    console.log(newRating);
+};
   return (
     <>
+    <Meta title = {"Project1976-E-Com"} />
     <section className='home-wrapper-1 py-5 main'>
       <div className='container-xxl'>
         <div className='row'>
@@ -208,7 +214,53 @@ const Home = () => {
         <ProductCard/>
       </div>
     </div>
-  </section>
+    </section>
+    <section className='famous-wrapper py-5 home-wrapper-2'>
+      <div className='container-xxl'>
+        <div className='row'>
+          <div className='col-3'>
+            <div className='famous-card position-relative'>
+            <img src='images/banner-watch.jpg' className='img-fluid' alt='banner'/>
+            <div className='famous-content position-absolute'>
+              <h5>VIG SCREEN</h5>
+              <h6>Smart Watch Series 7</h6>
+              <p>From $399or $16.62/mo. for 24mo.*</p>
+            </div>
+            </div>
+          </div>
+          <div className='col-3'>
+            <div className='famous-card position-relative'>
+            <img src='images/laptop-banner.jpg'  className='img-fluid' alt='banner'/>
+            <div className='famous-content position-absolute'>
+              <h5>STUDIO DISPLAY</h5>
+              <h6>600 nits of Brightness</h6>
+              <p>27-inch 5K Retina display</p>
+            </div>
+            </div>
+          </div>
+          <div className='col-3'>
+            <div className='famous-card position-relative'>
+            <img src='images/mobile-banner.jpg' className='img-fluid' alt='banner'/>
+            <div className='famous-content position-absolute'>
+              <h5>SMARTPHONES</h5>
+              <h6>Smartphone 13 Pro.</h6>
+              <p>Now in Green,From$999.00 or 41.62</p>
+            </div>
+            </div>
+          </div>
+          <div className='col-3'>
+            <div className='famous-card position-relative'>
+            <img src='images/lamps-banner.jpg' className='img-fluid' alt='banner'/>
+            <div className='famous-content position-absolute'>
+              <h5>HOME SPEAKERS</h5>
+              <h6>Room-filling sound.</h6>
+              <p>From$699.00 or 116.62</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section className='special-wrapper py-5 home-wrapper-2'>
       <div className='container-xxl'>
         <div className='row'>
@@ -220,6 +272,237 @@ const Home = () => {
         <SpecialProducts/>
         </div>
       </div>
+    </section>
+    <section className='popular-wrapper py-5 home-wrapper-2'>
+    <div className='container-xxl'>
+      <div className='row'>
+        <div className='col-12'>
+          <h3 className='section-heading'>
+            Our Popular Products
+          </h3>
+        </div>
+      </div>
+      <div className='row'>
+        <div className='col-2'>
+          <div className='card'>
+            <Link className='card-content d-flex align-items-center'>
+              <img src='images/watch7.jpg' alt='watch' />
+              <h6>Smart Watch</h6>
+            </Link>
+            <Link className='card-content d-flex align-items-center'>
+              <img src='images/speaker5.jpg' alt='speaker' />
+              <h6>Speaker</h6>
+            </Link>
+            <Link className='card-content d-flex align-items-center'>
+              <img src='images/laptop 2.jpg' alt='laptop' />
+              <h6>Laptops</h6>
+            </Link>
+          </div>
+        </div>
+        <div className='col-2'>
+          <div className='card-img position-relative'>
+          <img src='images/lamp.jpg' className='' alt='background'/>
+          <div className='card-img-details position-absolute'>
+          <p className='title'>15% OFF</p>
+          <h3>Home Lamps</h3>
+          <p className=''>From $399or $16.62/mo.<br/>for 24 mo.</p>
+          </div>
+          </div>
+        </div>
+        <div className='col-2'>
+        <div className='special-product-card card-special'>
+            <div className='d-flex justify-content-between'>
+                <div className=''>
+                </div>
+                <div className='special-product-content'>
+                <h5 className='brand'>Casio</h5>
+                <h6 className='title'>Watch Elect-M12 RED<br/>Watch Screen...</h6>
+                <ReactStars
+                count={5}
+                onChange={ratingChanged}
+                size={24}
+                edit={false}
+                value={5}
+                activeColor='#ffd700' 
+                />
+                <p className='price'>
+                <span className='red-p'>$33</span>&nbsp;<strike>$99</strike>
+                </p>
+                <div className='discount-title'>
+                <p className='mb-0'>
+                <b>13 days</b>
+                </p>
+                <div className='d-flex gap-10 align-items-center'>
+                <span className='badge rounded-circle p-2 bg-success'>19</span>:
+                <span className='badge rounded-circle p-2 bg-success'>34</span>:
+                <span className='badge rounded-circle p-2 bg-success'>10</span> 
+                </div>
+                <div className='prod-count my-3'>
+                <p>Products: 245</p>
+                <div 
+                className="progress" 
+                role="progressbar" 
+                aria-label="Basic example" 
+                aria-valuenow="25" 
+                aria-valuemin="0" 
+                aria-valuemax="100"
+                style={{height:"5px"}}
+                >
+                        <div className="progress-bar"  style={{width: "75%" , height:"5px" , backgroundColor:"#088178"}}></div>
+                </div>
+                </div>
+                <Link className="button">Add to Cart</Link>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div className='col-2'>
+        <div className='special-product-card'>
+        <div className='d-flex justify-content-between'>
+            <div className=''>
+            </div>
+            <div className='special-product-content'>
+            <h5 className='brand'>Toshiba</h5>
+            <h6 className='title'>TeleV flatScreen 15pxO<br/>3D Led Screen...</h6>
+            <ReactStars
+            count={5}
+            onChange={ratingChanged}
+            size={24}
+            edit={false}
+            value={5}
+            activeColor='#ffd700' 
+            />
+            <p className='price'>
+            <span className='red-p'>$1100</span>&nbsp;<strike>$1200</strike>
+            </p>
+            <div className='discount-title'>
+            <p className='mb-0'>
+            <b>5 days</b>
+            </p>
+            <div className='d-flex gap-10 align-items-center'>
+            <span className='badge rounded-circle p-2 bg-success'>66</span>:
+            <span className='badge rounded-circle p-2 bg-success'>0</span>:
+            <span className='badge rounded-circle p-2 bg-success'>0</span> 
+            </div>
+            <div className='prod-count my-3'>
+            <p>Product: 15</p>
+            <div 
+            className="progress" 
+            role="progressbar" 
+            aria-label="Basic example" 
+            aria-valuenow="25" 
+            aria-valuemin="0" 
+            aria-valuemax="100"
+            style={{height:"5px"}}
+            >
+                    <div className="progress-bar"  style={{width: "66%" , height:"5px" , backgroundColor:"#088178"}}></div>
+            </div>
+            </div>
+            <Link className="button">Add to Cart</Link>
+            </div>
+            </div>
+        </div>
+    </div>
+        </div>
+        <div className='col-2'>
+        <div className='special-product-card'>
+        <div className='d-flex justify-content-between'>
+            <div className=''>
+            </div>
+            <div className='special-product-content'>
+            <h5 className='brand'>Apple</h5>
+            <h6 className='title'>AirPods SEC Gene HeadAir France with...</h6>
+            <ReactStars
+            count={5}
+            onChange={ratingChanged}
+            size={24}
+            edit={false}
+            value={5}
+            activeColor='#ffd700' 
+            />
+            <p className='price'>
+            <span className='red-p'>$200</span>&nbsp;<strike>$300</strike>
+            </p>
+            <div className='discount-title'>
+            <p className='mb-0'>
+            <b>5 days</b>
+            </p>
+            <div className='d-flex gap-10 align-items-center'>
+            <span className='badge rounded-circle p-2 bg-success'>80</span>:
+            <span className='badge rounded-circle p-2 bg-success'>20</span>:
+            <span className='badge rounded-circle p-2 bg-success'>3</span> 
+            </div>
+            <div className='prod-count my-3'>
+            <p>Product: 55</p>
+            <div 
+            className="progress" 
+            role="progressbar" 
+            aria-label="Basic example" 
+            aria-valuenow="25" 
+            aria-valuemin="0" 
+            aria-valuemax="100"
+            style={{height:"5px"}}
+            >
+                    <div className="progress-bar"  style={{width: "41%" , height:"5px" , backgroundColor:"#088178"}}></div>
+            </div>
+            </div>
+            <Link className="button">Add to Cart</Link>
+            </div>
+            </div>
+        </div>
+    </div>
+        </div>
+        <div className='col-2'>
+        <div className='special-product-card'>
+        <div className='d-flex justify-content-between'>
+            <div className=''>
+            </div>
+            <div className='special-product-content'>
+            <h5 className='brand'>Canon</h5>
+            <h6 className='title'>Canon Session Action<br/>With 8MP...</h6>
+            <ReactStars
+            count={5}
+            onChange={ratingChanged}
+            size={24}
+            edit={false}
+            value={3}
+            activeColor='#ffd700' 
+            />
+            <p className='price'>
+            <span className='red-p'>$16</span>&nbsp;<strike>$30</strike>
+            </p>
+            <div className='discount-title'>
+            <p className='mb-0'>
+            <b>8 days</b>
+            </p>
+            <div className='d-flex gap-10 align-items-center'>
+            <span className='badge rounded-circle p-2 bg-success'>192</span>:
+            <span className='badge rounded-circle p-2 bg-success'>0</span>:
+            <span className='badge rounded-circle p-2 bg-success'>0</span> 
+            </div>
+            <div className='prod-count my-3'>
+            <p>Products: 100</p>
+            <div 
+            className="progress" 
+            role="progressbar" 
+            aria-label="Basic example" 
+            aria-valuenow="50" 
+            aria-valuemin="0" 
+            aria-valuemax="100"
+            style={{height:"5px"}}
+            >
+                    <div className="progress-bar"  style={{width: "50%" , height:"5px" , backgroundColor:"#088178"}}></div>
+            </div>
+            </div>
+            <Link className="button">Add to Cart</Link>
+            </div>
+            </div>
+        </div>
+    </div>
+        </div>
+      </div>
+    </div>
     </section>
     <section className='marquee-wrapper py-2'>
       <div className='container-xxl'>
