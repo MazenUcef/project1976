@@ -1,10 +1,11 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {Link, useLocation} from 'react-router-dom'
 const BlogCard = () => {
+    const location = useLocation()
   return (
     <>
-    <div className='col-3'>
-        <div className='blog-card'>
+    <div className={`${location.pathname === '/blogs' ?  'col-6' : 'col-3' }`}>
+        <div className={`${location.pathname === '/blogs' ?  'blog-card secBlog' : 'blog-card'}`}>
             <div className='card-image'>
                 <img id='img' src='images/blog-1.jpg' className='img-fluid' alt='blog'/>
             </div>
@@ -17,8 +18,8 @@ const BlogCard = () => {
             </div>
         </div>
     </div>
-    <div className='col-3'>
-        <div className='blog-card'>
+    <div className={`${location.pathname === '/blogs' ?  'col-6' : 'col-3' }`}>
+        <div className={`${location.pathname === '/blogs' ?  'blog-card secBlog' : 'blog-card'}`}>
             <div className='card-image'>
                 <img id='img' src='images/blog-2.jpg' className='img-fluid' alt='blog'/>
             </div>
@@ -31,8 +32,8 @@ const BlogCard = () => {
             </div>
         </div>
     </div>
-    <div className='col-3'>
-        <div className='blog-card'>
+    <div className={`${location.pathname === '/blogs' ?  'col-6' : 'col-3' }`}>
+        <div className={`${location.pathname === '/blogs' ?  'blog-card secBlog' : 'blog-card'}`}>
             <div className='card-image'>
                 <img id='img' src='images/blog-3.jpg' className='img-fluid' alt='blog'/>
             </div>
@@ -45,8 +46,8 @@ const BlogCard = () => {
             </div>
         </div>
     </div>
-    <div className='col-3'>
-        <div className='blog-card'>
+    <div className={`${location.pathname === '/blogs' ?  'col-6' : 'col-3' }`}>
+        <div className={`${location.pathname === '/blogs' ?  'blog-card secBlog' : 'blog-card'}`}>
             <div className='card-image'>
                 <img id='img' src='images/blog-4.jpg' className='img-fluid' alt='blog'/>
             </div>

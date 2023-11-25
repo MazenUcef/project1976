@@ -552,3 +552,49 @@ font-size: 14px;
   top: 13%;
 }
 /* end of our store */
+/* css related to blog area */
+.secBlog{
+  height: 550px;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+.secBlog div.blog-content{
+  padding-top: 90px;
+}
+.secBlog div.card-image img{ width: 100%; height: 300px; border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px;
+}
+/* end of this */
+/* contact area */
+.contact-inner-wrapper{
+  padding: 30px 20px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  background-color: white;
+  gap: 15px;
+}
+.contact-inner-wrapper>div{
+  width: 48%;
+}
+.contact-title{
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 35px;
+  text-align: left;
+  margin-top: 0;
+}
+.contact-inner-wrapper form .form-control{ background-color: var(--color-b6aaaa-bg); color: white; border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px;
+border-color: transparent;
+padding: 10px;
+}
+.contact-inner-wrapper ul{
+  list-style: none;
+}
+.contact-inner-wrapper address,
+.contact-inner-wrapper a,
+.contact-inner-wrapper p{
+  color: var(--color-b6aaaa-bg);
+}
+/* end of contact area */

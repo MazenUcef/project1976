@@ -211,7 +211,9 @@ const Home = () => {
             Featured Collection
           </h3>
         </div>
-        <ProductCard/>
+        <div className='row text-center'>
+          <ProductCard/>
+        </div>
       </div>
     </div>
     </section>
@@ -545,7 +547,7 @@ const Home = () => {
             Our Latest Blogs
             </h3>
           </div>
-          <BlogCard/>
+          <BlogCard/> 
         </div>
       </div>
     </section>

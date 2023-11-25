@@ -11,7 +11,7 @@ const {grid} = props
         console.log(newRating);
     };
   return (
-    <>
+    <> 
     <div className={`${location.pathname === '/store'? `gr-${grid}` : "col-3"}`}>
       <Link className='product-card position-relative'>
       <div className='wishlist-icon position-absolute'>
@@ -45,7 +45,7 @@ const {grid} = props
         </div>
       </Link>
     </div>
-    <div className={`${location.pathname === '/store'? `gr-${grid}` : "col-3"}`}>
+    <div className={`${location.pathname === '/store'? `gr-${grid}` : "col-3 mb-5"}`}>
       <Link className='product-card position-relative'>
       <div className='wishlist-icon position-absolute'>
       <Link><img src='images/wish.svg' alt='wishlist' /></Link>
@@ -78,7 +78,7 @@ const {grid} = props
         </div>
       </Link>
     </div>
-    <div className={`${location.pathname === '/store'? `gr-${grid}` : "col-3"}`}>
+    <div className={`${location.pathname === '/store'? `gr-${grid}` : "col-3 mb-5"}`}>
       <Link className='product-card position-relative'>
       <div className='wishlist-icon position-absolute'>
       <Link><img src='images/wish.svg' alt='wishlist' /></Link>
@@ -110,7 +110,7 @@ const {grid} = props
         </div>
       </Link>
     </div>
-    <div className={`${location.pathname === '/store'? `gr-${grid}` : "col-3"}`}>
+    <div className={`${location.pathname === '/store'? `gr-${grid}` : "col-3 mb-5"}`}>
     <Link className='product-card position-relative'>
     <div className='wishlist-icon position-absolute'>
     <Link><img src='images/wish.svg' alt='wishlist' /></Link>
@@ -143,7 +143,7 @@ const {grid} = props
       </div>
     </Link>
     </div>
-    <div className={`${location.pathname === '/store'? `gr-${grid}` : "col-3"}`}>
+    <div className={`${location.pathname === '/store'? `gr-${grid}` : "col-3 mb-5"}`}>
       <Link className='product-card position-relative'>
       <div className='wishlist-icon position-absolute'>
       <Link><img src='images/wish.svg' alt='wishlist' /></Link>
@@ -176,7 +176,7 @@ const {grid} = props
         </div>
       </Link>
     </div>
-    <div className={`${location.pathname === '/store'? `gr-${grid}` : "col-3"}`}>
+    <div className={`${location.pathname === '/store'? `gr-${grid}` : "col-3 mb-5"}`}>
     <Link className='product-card position-relative'>
     <div className='wishlist-icon position-absolute'>
     <Link><img src='images/wish.svg' alt='wishlist' /></Link>
@@ -209,7 +209,7 @@ const {grid} = props
       </div>
     </Link>
     </div>
-    <div className={`${location.pathname === '/store'? `gr-${grid}` : "col-3"}`}>
+    <div className={`${location.pathname === '/store'? `gr-${grid}` : "col-3 mb-5"}`}>
       <Link className='product-card position-relative'>
       <div className='wishlist-icon position-absolute'>
       <Link><img src='images/wish.svg' alt='wishlist' /></Link>
@@ -242,7 +242,7 @@ const {grid} = props
         </div>
       </Link>
     </div>
-    <div className={`${location.pathname === '/store'? `gr-${grid}` : "col-3"}`}>
+    <div className={`${location.pathname === '/store'? `gr-${grid}` : "col-3 mb-5"}`}>
     <Link className='product-card position-relative'>
     <div className='wishlist-icon position-absolute'>
     <Link><img src='images/wish.svg' alt='wishlist' /></Link>
@@ -275,7 +275,7 @@ const {grid} = props
       </div>
     </Link>
     </div>
-    <div className={`${location.pathname === '/store'? `gr-${grid}` : "col-3"}`}>
+    <div className={`${location.pathname === '/store'? `gr-${grid}` : "col-3 mb-5"}`}>
     <Link className='product-card position-relative'>
     <div className='wishlist-icon position-absolute'>
     <Link><img src='images/wish.svg' alt='wishlist' /></Link>
@@ -308,7 +308,7 @@ const {grid} = props
       </div>
     </Link>
     </div>
-    <div className={`${location.pathname === '/store'? `gr-${grid}` : "col-3"}`}>
+    <div className={`${location.pathname === '/store'? `gr-${grid}` : "col-3 mb-5"}`}>
     <Link className='product-card position-relative'>
     <div className='wishlist-icon position-absolute'>
     <Link><img src='images/wish.svg' alt='wishlist' /></Link>
@@ -341,7 +341,7 @@ const {grid} = props
       </div>
     </Link>
     </div>
-    <div className={`${location.pathname === '/store'? `gr-${grid}` : "col-3"}`}>
+    <div className={`${location.pathname === '/store'? `gr-${grid}` : "col-3 mb-5"}`}>
     <Link className='product-card position-relative'>
     <div className='wishlist-icon position-absolute'>
     <Link><img src='images/wish.svg' alt='wishlist' /></Link>
@@ -374,7 +374,7 @@ const {grid} = props
       </div>
     </Link>
     </div>
-    <div className={`${location.pathname === '/store'? `gr-${grid}` : "col-3"}`}>
+    <div className={`${location.pathname === '/store'? `gr-${grid}` : "col-3 mb-5"}`}>
     <Link className='product-card position-relative'>
     <div className='wishlist-icon position-absolute'>
     <Link><img src='images/wish.svg' alt='wishlist' /></Link>
@@ -407,7 +407,7 @@ const {grid} = props
       </div>
     </Link>
     </div>
-    <div className={`${location.pathname === '/store'? `gr-${grid}` : "col-3"}`}>
+    <div className={`${location.pathname === '/store'? `gr-${grid}` : "col-3 mb-5"}`}>
     <Link className='product-card position-relative'>
     <div className='wishlist-icon position-absolute'>
     <Link><img src='images/wish.svg' alt='wishlist' /></Link>
@@ -440,7 +440,7 @@ const {grid} = props
       </div>
     </Link>
     </div>
-    <div className={`${location.pathname === '/store'? `gr-${grid}` : "col-3"}`}>
+    <div className={`${location.pathname === '/store'? `gr-${grid}` : "col-3 mb-5"}`}>
     <Link className='product-card position-relative'>
     <div className='wishlist-icon position-absolute'>
     <Link><img src='images/wish.svg' alt='wishlist' /></Link>
@@ -473,7 +473,7 @@ const {grid} = props
       </div>
     </Link>
     </div>
-    <div className={`${location.pathname === '/store'? `gr-${grid}` : "col-3"}`}>
+    <div className={`${location.pathname === '/store'? `gr-${grid}` : "col-3 mb-5"}`}>
     <Link className='product-card position-relative'>
     <div className='wishlist-icon position-absolute'>
     <Link><img src='images/wish.svg' alt='wishlist' /></Link>
@@ -506,7 +506,7 @@ const {grid} = props
       </div>
     </Link>
     </div>
-    <div className={`${location.pathname === '/store'? `gr-${grid}` : "col-3"}`}>
+    <div className={`${location.pathname === '/store'? `gr-${grid}` : "col-3 mb-5"}`}>
     <Link className='product-card position-relative'>
     <div className='wishlist-icon position-absolute'>
     <Link><img src='images/wish.svg' alt='wishlist' /></Link>
