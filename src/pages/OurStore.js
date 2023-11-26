@@ -4,6 +4,7 @@ import Meta from '../components/Meta'
 import ReactStars from 'react-rating-stars-component'
 import { Link } from 'react-router-dom'
 import ProductCard from '../components/ProductCard'
+import Color from '../components/Color'
 
 
 const OurStore = () => {
@@ -64,15 +65,7 @@ return (
                         </div>
                         <h5 className='sub-title'>Colors</h5>
                         <div>
-                            <div className='d-flex flex-wrap'>
-                                <ul className='colors ps-0'>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </div>
+                            <Color/>
                         </div>
                         <h5 className='sub-title'>Size</h5>
                         <div>
