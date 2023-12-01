@@ -14,7 +14,7 @@ const BlogCard = () => {
                 <h5 className='title'>A Beautiful Sunday Morning Renaissance</h5>
                 <p className='desc'>You're Only As Your Last Collection, Which Is An
                 Enormous Pressure. I Think There is something About...</p>
-                <Link to='/' className='button'>Read More</Link>
+                <Link to='/blog/:id' className='button'>Read More</Link>
             </div>
         </div>
     </div>
@@ -28,7 +28,7 @@ const BlogCard = () => {
                 <h5 className='title'>Sed Ut Perspiciatis Unde Omnis...</h5> 
                 <p className='desc'>You're Only As Your Last Collection, Which Is An
                 Enormous Pressure. I Think There is something About...</p>
-                <Link to='/' className='button'>Read More</Link>
+                <Link to='/blog/:id' className='button'>Read More</Link>
             </div>
         </div>
     </div>
@@ -42,7 +42,7 @@ const BlogCard = () => {
                 <h5 className='title'>Vitae Magnis Fusce Laoreet Porttitor...</h5>
                 <p className='desc'>You're Only As Your Last Collection, Which Is An
                 Enormous Pressure. I Think There is something About...</p>
-                <Link to='/' className='button'>Read More</Link>
+                <Link to='/blog/:id' className='button'>Read More</Link>
             </div>
         </div>
     </div>
@@ -56,7 +56,7 @@ const BlogCard = () => {
                 <h5 className='title'>Urna Pretium Elit Mauris Cursus Curabitu</h5>
                 <p className='desc'>You're Only As Your Last Collection, Which Is An
                 Enormous Pressure. I Think There is something About...</p>
-                <Link to='/' className='button'>Read More</Link>
+                <Link to='/blog/:id' className='button'>Read More</Link>
             </div>
         </div>
     </div>
