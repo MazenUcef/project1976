@@ -668,6 +668,10 @@ padding: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
+.auth-card p{
+  font-size: 13px;
+  color: var(--color-b6aaaa-bg);
+}
 .auth-card form div input{
   background-color: var(--color-b6aaaa-bg);
 }
