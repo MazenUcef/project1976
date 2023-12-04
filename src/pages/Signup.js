@@ -1,7 +1,6 @@
 import React from 'react'
 import BreadCrum from '../components/BreadCrum'
 import Meta from '../components/Meta'
-import { Link } from 'react-router-dom'
 
 
 

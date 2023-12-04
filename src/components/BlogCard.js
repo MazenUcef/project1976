@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link, useLocation} from 'react-router-dom'
 const BlogCard = () => {
-    const location = useLocation()
+    const location = useLocation() 
   return (
     <>
     <div className={`${location.pathname === '/blogs' ?  'col-6' : 'col-3' }`}>

@@ -211,7 +211,7 @@ const Home = () => {
             Featured Collection
           </h3>
         </div>
-        <div className='row text-center'>
+        <div className='row cards-container text-center'> 
           <ProductCard/>
         </div>
       </div>

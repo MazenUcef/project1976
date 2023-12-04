@@ -1,8 +1,12 @@
 import React from 'react'
 import BreadCrum from '../components/BreadCrum'
 import Meta from '../components/Meta'
+import { Link } from 'react-router-dom'
+import { FaArrowLeft } from "react-icons/fa";
 
-const SingleBlog = () => {
+
+
+const BlogSingle = () => {
   return (
 <>
 <Meta title = {"Dynamic Blog Name"}/>
@@ -16,7 +20,7 @@ const SingleBlog = () => {
                     <div>
                         <ul className='ps-0'>
                             <li>Watch</li>
-                            <li>Tv</li>
+                            <li>TV</li>
                             <li>Camera</li>
                             <li>Laptop</li>
                         </ul>
@@ -34,7 +38,10 @@ const SingleBlog = () => {
                     it's not something people need,
                     but it's what they want.
                     It really pulls at their heart.
-                    I have fantastic relationship with money. Scelerisque sociosqu ullamcorper. </p>
+                    I have fantastic relationship with money.
+                    Scelerisque sociosqu ullamcorper. 
+                    </p>
+                    <Link to='/blogs'><FaArrowLeft /> Go Back To Blogs</Link>
                 </div>
             </div>
         </div>
@@ -44,4 +51,4 @@ const SingleBlog = () => {
   )
 }
 
-export default SingleBlog
+export default BlogSingle

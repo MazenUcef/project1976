@@ -13,7 +13,13 @@ import Login from './pages/Login';
 import Forgotpass from './pages/Forgotpass';
 import Signup from './pages/Signup'
 import Resetpass from './pages/Resetpass';
-import SingleBlog from './pages/SingleBlog';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import RefundPolicy from './pages/RefundPolicy';
+import ShippingPolicy from './pages/ShippingPolicy';
+import TermAndCond from './pages/TermAndCond';
+import BlogSingle from './pages/BlogSingle';
+import ProductSingle from './pages/ProductSingle';
+
 
 
 function App() {
@@ -23,17 +29,21 @@ function App() {
     <Routes>
     <Route path='/' element={<Layout/>} >
     <Route index element={<Home/>} />
-    <Route path='/about' element={<About/>}/>
-    <Route path='/contact' element={<Contact/>}/>
-    <Route path='/store' element={<OurStore/>}/>
-    <Route path='/blogs' element={<Blogs/>}/>
-    <Route path='/blog/:id' element={<SingleBlog/>}/>
-    <Route path='/compare-product' element={<CompareProduct/>}/>
-    <Route path='/wishlist' element={<Wishlist/>}/>
-    <Route path='/login' element={<Login/>}/>
-    <Route path='/forgot-password' element={<Forgotpass/>}/>
-    <Route path='/signup' element={<Signup/>}/>
-    <Route path='/reset-password' element={<Resetpass/>}/>
+    <Route path='about' element={<About/>}/>
+    <Route path='contact' element={<Contact/>}/>
+    <Route path='product' element={<OurStore/>}/>
+    <Route path='products' element={<ProductSingle/>}/>
+    <Route path='blogs' element={<Blogs/>}/>
+    <Route path='compare-product' element={<CompareProduct/>}/>
+    <Route path='wishlist' element={<Wishlist/>}/>
+    <Route path='login' element={<Login/>}/>
+    <Route path='forgot-password' element={<Forgotpass/>}/>
+    <Route path='signup' element={<Signup/>}/>
+    <Route path='blog' element={<BlogSingle/>}/>
+    <Route path='privacy-policy' element={<PrivacyPolicy/>}/>
+    <Route path='refund-policy' element={<RefundPolicy/>}/>
+    <Route path='shipping-policy' element={<ShippingPolicy/>}/>
+    <Route path='terms-and-conditions' element={<TermAndCond/>}/>
     </Route>
     </Routes>
     </BrowserRouter>
