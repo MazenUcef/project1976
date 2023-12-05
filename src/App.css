@@ -759,9 +759,17 @@ font-size: 18px;
 .review-form{
   padding-top: 30px;
   padding-bottom: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .review-form h4{
 font-size: 16px;
+color: var(--color-b6aaaa-bg);
+}
+.review:not(:last-child){
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.review p{
+font-size: 14px;
 color: var(--color-b6aaaa-bg);
 }
 /* end of single product section */

@@ -35,7 +35,7 @@ return (
                 <h3 className='mb-4'>Description</h3>
                 <div className='bg-white p-3'>
                     <p>
-                        " "
+                        "Description Content......"
                     </p>
                 </div>
             </div>
@@ -71,7 +71,7 @@ return (
                     )
                 }
                     </div>
-                    <div className='review-form'> 
+                    <div className='review-form py-4'> 
                     <h4>Write A Review</h4>
                     <form action='' className='d-flex flex-column gap-15'>
                     <div>
@@ -112,6 +112,48 @@ return (
                       <button className='button border-0'>Submit Review</button>
                     </div>
                   </form>
+                    </div>
+                    <div className='reviews mt-5'>
+                        <div className='review'>
+                        <div className='gap-10 d-flex align-items-center'>
+                        <h6 className='mb-0'>Mirann George</h6>
+                        <ReactStars
+                        count={5}
+                        onChange={ratingChanged}
+                        size={24}
+                        edit={false}
+                        value={4}
+                        activeColor='#ffd700' 
+                        />
+                        </div>
+                        <p className='mt-3'>
+                        Finally, I believe the creator will create additional extensions.
+                        So sounds great goahed
+                        I had a lot of fun using this site, which is very adaptable.
+                        , simple and extremely useful, Thanks a lot to the owner and the creator.
+                        I had a fantastic time.
+                        </p>
+                        </div>
+                        <div className='review'>
+                        <div className='gap-10 d-flex align-items-center'>
+                        <h6 className='mb-0'>John Stim</h6>
+                        <ReactStars
+                        count={5}
+                        onChange={ratingChanged}
+                        size={24}
+                        edit={false}
+                        value={5}
+                        activeColor='#ffd700' 
+                        />
+                        </div>
+                        <p className='mt-3'>
+                        I had a lot of fun using this site, which is very adaptable.
+                        , simple and extremely useful, Thanks a lot to the owner and the creator.
+                        I had a fantastic time.
+                        Finally, I believe the creator will create additional extensions.
+                        So sounds great goahed
+                        </p>
+                        </div>
                     </div>
                 </div>
             </div>
