@@ -13,7 +13,9 @@ const TermAndCond = () => {
     <div className='row'>
       <div className='col-12'>
         <div className='policy'>
-          <h2></h2>
+          <h3></h3>
+          <h4></h4>
+          <p></p>
         </div>
       </div>
     </div>

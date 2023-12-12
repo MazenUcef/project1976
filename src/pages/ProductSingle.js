@@ -7,10 +7,16 @@ import { FaCodeCompare } from "react-icons/fa6";
 import { MdLocalShipping } from "react-icons/md";
 import { SiMaterialdesignicons } from "react-icons/si";
 import { RiRulerLine } from "react-icons/ri";
+import { CiShare1 } from "react-icons/ci";
 import { CiHeart } from "react-icons/ci";
 import Color from '../components/Color'
 import SingleProdFeat from '../components/SingleProdFeat'
 import ReactStars from 'react-rating-stars-component'
+import ProdImg from '../images/headset-zoom.jpg'
+import ProdImg1 from '../images/headset-zoom1.jpg'
+import ProdImg2 from '../images/headset-zoom2.jpg'
+import ProdImg3 from '../images/headset-zoom3.jpg'
+import ProdImg4 from '../images/headset-zoom4.jpg'
 import {
     Accordion,
     AccordionItem,
@@ -21,13 +27,24 @@ import {
 
 // Demo styles, see 'Styles' section below for some notes on use.
 import 'react-accessible-accordion/dist/fancy-example.css';
+import { Link } from 'react-router-dom';
 
 
 
 
 const ProductSingle = () => {
+//==============================================
+const copyToClipboard = (text) => {
+    console.log('text', text)
+    var textField = document.createElement('textarea')
+    textField.innerText = text
+    document.body.appendChild(textField)
+    textField.select()
+    document.execCommand('copy')
+    textField.remove()
+  } 
 // =============================================
-const props = { width: 700, height: 650, zoomWidth: 500, img: "1.jpg" , img:'images/headset-zoom.jpg'};
+const props = { width: 700, height: 650, zoomWidth: 500, img: "1.jpg" , img:ProdImg};
 // =============================================
 const ratingChanged = (newRating)=>{
 console.log(newRating);
@@ -49,10 +66,10 @@ return (
                     </div>
                 </div>
                 <div className='other-product-images d-flex flex-wrap gap-15'>
-                    <div><img src='images/headset-zoom1.jpg' alt='prod-img' className='img-fluid'/></div>
-                    <div><img src='images/headset-zoom2.jpg' alt='prod-img' className='img-fluid'/></div>
-                    <div><img src='images/headset-zoom3.jpg' alt='prod-img' className='img-fluid'/></div>
-                    <div><img src='images/headset-zoom4.jpg' alt='prod-img' className='img-fluid'/></div>
+                    <div><img src={ProdImg1} alt='prod-img' className='img-fluid'/></div>
+                    <div><img src={ProdImg2} alt='prod-img' className='img-fluid'/></div>
+                    <div><img src={ProdImg3} alt='prod-img' className='img-fluid'/></div>
+                    <div><img src={ProdImg4} alt='prod-img' className='img-fluid'/></div>
                 </div>
             </div>
             <div className='col-6'>
@@ -133,7 +150,7 @@ return (
                             <a className='add-to-wish' href=''><MdFavoriteBorder className='fs-5 me-2'/>Add to WishList</a>
                         </div>
                         </div>
-                        <div className='accordion my-5'>
+                        <div className='accordion mt-5'>
                             <Accordion>
                                 <AccordionItem>
                                     <AccordionItemHeading>
@@ -213,6 +230,10 @@ return (
                                     </AccordionItemPanel>
                                 </AccordionItem>
                         </Accordion>
+                        </div>
+                        <div className='copy-to-clip mt-1 p-2'>
+                            <Link className='mb-0 share-link' onClick={()=>{copyToClipboard("http://localhost:3000/products");
+                        alert("copied")}}><CiShare1 className='fs-4 mb-0'/> Share</Link>
                         </div>
                     </div>
                 </div>
@@ -367,7 +388,7 @@ return (
 </div>
 </section>
 </>
-  )
+)
 }
 
 export default ProductSingle

@@ -1,6 +1,26 @@
 import React from 'react'
 import ReactStars from 'react-rating-stars-component'
 import {Link, useLocation} from 'react-router-dom'
+import Wishlist from '../images/wish.svg'
+import Product1 from '../images/product-1.jpg'
+import Product2 from '../images/f1.jpg'
+import Product3 from '../images/product-2.jpg'
+import Product4 from '../images/f2.jpg'
+import Product5 from '../images/tab2.jpg'
+import Product6 from '../images/f3.jpg'
+import Product7 from '../images/product-3.jpg'
+import Product8 from '../images/f5.jpg'
+import Product9 from '../images/f4.jpg'
+import Product10 from '../images/f6.jpg'
+import Product11 from '../images/equip1.jpg'
+import Product12 from '../images/equip2.jpg'
+import Product13 from '../images/f7.jpg'
+import Product14 from '../images/f8.jpg'
+import Product15 from '../images/n3.jpg'
+import Product16 from '../images/equip3.jpg'
+import Prodcomparer from '../images/prodcompare.svg'
+import View from '../images/view.svg'
+import AddCart from '../images/cart.svg'
 
 const ProductCard = (props) => {
 // ===========================
@@ -13,12 +33,12 @@ const {grid} = props
   return (
     <> 
     <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-3"}`}>
-      <Link to='product/:id' className='product-card position-relative'>
+      <Link to=':id' className='product-card position-relative'>
       <div className='wishlist-icon position-absolute'>
-      <Link><img src='images/wish.svg' alt='wishlist' /></Link>
+      <Link><img src={Wishlist} alt='wishlist' /></Link>
       </div>
         <div className='product-image'>
-          <img src='images/product-1.jpg' alt='product'/>
+          <img src={Product1} alt='product'/>
         </div>
         <div className='product-details'>
         <h6 className='brand'>Havels</h6>
@@ -46,12 +66,12 @@ const {grid} = props
       </Link>
     </div>
     <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-3 mb-5"}`}>
-      <Link to='product/:id' className='product-card position-relative'>
+      <Link to=':id' className='product-card position-relative'>
       <div className='wishlist-icon position-absolute'>
-      <Link><img src='images/wish.svg' alt='wishlist' /></Link>
+      <Link><img src={Wishlist} alt='wishlist' /></Link>
       </div>
         <div className='product-image'>
-          <img src='images/f1.jpg' alt='product'/>
+          <img src={Product2} alt='product'/>
         </div>
         <div className='product-details'>
         <h6 className='brand'>Havels</h6>
@@ -79,12 +99,12 @@ const {grid} = props
       </Link>
     </div>
     <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-3 mb-5"}`}>
-      <Link to='product/:id' className='product-card position-relative'>
+      <Link to=':id' className='product-card position-relative'>
       <div className='wishlist-icon position-absolute'>
-      <Link><img src='images/wish.svg' alt='wishlist' /></Link>
+      <Link><img src={Wishlist} alt='wishlist' /></Link>
       </div>
         <div className='product-image'>
-          <img src='images/product-2.jpg' alt='product'/>
+          <img src={Product3} alt='product'/>
         </div>
         <div className='product-details'>
         <h6 className='brand'>Sony</h6>
@@ -111,12 +131,12 @@ const {grid} = props
       </Link>
     </div>
     <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-3 mb-5"}`}>
-    <Link to='product/:id' className='product-card position-relative'>
+    <Link to=':id' className='product-card position-relative'>
     <div className='wishlist-icon position-absolute'>
-    <Link><img src='images/wish.svg' alt='wishlist' /></Link>
+    <Link><img src={Wishlist} alt='wishlist' /></Link>
     </div>
       <div className='product-image'>
-        <img src='images/f2.jpg' alt='product'/>
+        <img src={Product4} alt='product'/>
       </div>
       <div className='product-details'>
       <h6 className='brand'>Havels</h6>
@@ -144,12 +164,12 @@ const {grid} = props
     </Link>
     </div>
     <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-3 mb-5"}`}>
-      <Link to='product/:id' className='product-card position-relative'>
+      <Link to=':id' className='product-card position-relative'>
       <div className='wishlist-icon position-absolute'>
-      <Link><img src='images/wish.svg' alt='wishlist' /></Link>
+      <Link><img src={Wishlist} alt='wishlist' /></Link>
       </div>
         <div className='product-image'>
-          <img src='images/tab2.jpg' alt='product'/>
+          <img src={Product5} alt='product'/>
         </div>
         <div className='product-details'>
         <h6 className='brand'>Havels</h6>
@@ -177,12 +197,12 @@ const {grid} = props
       </Link>
     </div>
     <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-3 mb-5"}`}>
-    <Link to='product/:id' className='product-card position-relative'>
+    <Link to=':id' className='product-card position-relative'>
     <div className='wishlist-icon position-absolute'>
-    <Link><img src='images/wish.svg' alt='wishlist' /></Link>
+    <Link><img src={Wishlist} alt='wishlist' /></Link>
     </div>
       <div className='product-image'>
-        <img src='images/f3.jpg' alt='product'/>
+        <img src={Product6} alt='product'/>
       </div>
       <div className='product-details'>
       <h6 className='brand'>Havels</h6>
@@ -210,12 +230,12 @@ const {grid} = props
     </Link>
     </div>
     <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-3 mb-5"}`}>
-      <Link to='product/:id' className='product-card position-relative'>
+      <Link to=':id' className='product-card position-relative'>
       <div className='wishlist-icon position-absolute'>
-      <Link><img src='images/wish.svg' alt='wishlist' /></Link>
+      <Link><img src={Wishlist} alt='wishlist' /></Link>
       </div>
         <div className='product-image'>
-          <img src='images/product-3.jpg' alt='product'/>
+          <img src={Product7} alt='product'/>
         </div>
         <div className='product-details'>
         <h6 className='brand'>Sony</h6>
@@ -243,12 +263,12 @@ const {grid} = props
       </Link>
     </div>
     <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-3 mb-5"}`}>
-    <Link to='product/:id' className='product-card position-relative'>
+    <Link to=':id' className='product-card position-relative'>
     <div className='wishlist-icon position-absolute'>
-    <Link><img src='images/wish.svg' alt='wishlist' /></Link>
+    <Link><img src={Wishlist} alt='wishlist' /></Link>
     </div>
       <div className='product-image'>
-        <img src='images/f5.jpg' alt='product'/>
+        <img src={Product8} alt='product'/>
       </div>
       <div className='product-details'>
       <h6 className='brand'>Havels</h6>
@@ -276,12 +296,12 @@ const {grid} = props
     </Link>
     </div>
     <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-3 mb-5"}`}>
-    <Link to='product/:id' className='product-card position-relative'>
+    <Link to=':id' className='product-card position-relative'>
     <div className='wishlist-icon position-absolute'>
-    <Link><img src='images/wish.svg' alt='wishlist' /></Link>
+    <Link><img src={Wishlist} alt='wishlist' /></Link>
     </div>
       <div className='product-image'>
-        <img src='images/f4.jpg' alt='product'/>
+        <img src={Product9} alt='product'/>
       </div>
       <div className='product-details'>
       <h6 className='brand'>Havels</h6>
@@ -309,12 +329,12 @@ const {grid} = props
     </Link>
     </div>
     <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-3 mb-5"}`}>
-    <Link to='product/:id' className='product-card position-relative'>
+    <Link to=':id' className='product-card position-relative'>
     <div className='wishlist-icon position-absolute'>
-    <Link><img src='images/wish.svg' alt='wishlist' /></Link>
+    <Link><img src={Wishlist} alt='wishlist'/></Link>
     </div>
       <div className='product-image'>
-        <img src='images/f6.jpg' alt='product'/>
+        <img src={Product10} alt='product'/>
       </div>
       <div className='product-details'>
       <h6 className='brand'>ZARA</h6>
@@ -342,12 +362,12 @@ const {grid} = props
     </Link>
     </div>
     <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-3 mb-5"}`}>
-    <Link to='product/:id' className='product-card position-relative'>
+    <Link to=':id' className='product-card position-relative'>
     <div className='wishlist-icon position-absolute'>
-    <Link><img src='images/wish.svg' alt='wishlist' /></Link>
+    <Link><img src={Wishlist} alt='wishlist' /></Link>
     </div>
       <div className='product-image'>
-        <img src='images/equip1.jpg' alt='product'/>
+        <img src={Product11} alt='product'/>
       </div>
       <div className='product-details'>
       <h6 className='brand'>LC Wak</h6>
@@ -375,12 +395,12 @@ const {grid} = props
     </Link>
     </div>
     <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-3 mb-5"}`}>
-    <Link to='product/:id' className='product-card position-relative'>
+    <Link to=':id' className='product-card position-relative'>
     <div className='wishlist-icon position-absolute'>
-    <Link><img src='images/wish.svg' alt='wishlist' /></Link>
+    <Link><img src={Wishlist} alt='wishlist' /></Link>
     </div>
       <div className='product-image'>
-        <img src='images/equip2.jpg' alt='product'/>
+        <img src={Product12} alt='product'/>
       </div>
       <div className='product-details'>
       <h6 className='brand'>Havels</h6>
@@ -408,12 +428,12 @@ const {grid} = props
     </Link>
     </div>
     <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-3 mb-5"}`}>
-    <Link to='product/:id' className='product-card position-relative'>
+    <Link to=':id' className='product-card position-relative'>
     <div className='wishlist-icon position-absolute'>
-    <Link><img src='images/wish.svg' alt='wishlist' /></Link>
+    <Link><img src={Wishlist} alt='wishlist' /></Link>
     </div>
       <div className='product-image'>
-        <img src='images/f7.jpg' alt='product'/>
+        <img src={Product13} alt='product'/>
       </div>
       <div className='product-details'>
       <h6 className='brand'>LC Wak</h6>
@@ -441,12 +461,12 @@ const {grid} = props
     </Link>
     </div>
     <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-3 mb-5"}`}>
-    <Link to='product/:id' className='product-card position-relative'>
+    <Link to=':id' className='product-card position-relative'>
     <div className='wishlist-icon position-absolute'>
-    <Link><img src='images/wish.svg' alt='wishlist' /></Link>
+    <Link><img src={Wishlist} alt='wishlist' /></Link>
     </div>
       <div className='product-image'>
-        <img src='images/f8.jpg' alt='product'/>
+        <img src={Product14} alt='product'/>
       </div>
       <div className='product-details'>
       <h6 className='brand'>US.polo</h6>
@@ -474,17 +494,17 @@ const {grid} = props
     </Link>
     </div>
     <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-3 mb-5"}`}>
-    <Link to='product/:id' className='product-card position-relative'>
+    <Link to=':id' className='product-card position-relative'>
     <div className='wishlist-icon position-absolute'>
-    <Link><img src='images/wish.svg' alt='wishlist' /></Link>
+    <Link><img src={Wishlist} alt='wishlist' /></Link>
     </div>
       <div className='product-image'>
-        <img src='images/n3.jpg' alt='product'/>
+        <img src={Product15} alt='product'/>
       </div>
       <div className='product-details'>
       <h6 className='brand'>Havels</h6>
       <h5 className='product-title'>
-      BChemise plain white<br/>
+      Chemise plain white<br/>
       Silver Colored xxli...
       </h5>
       <ReactStars
@@ -507,12 +527,12 @@ const {grid} = props
     </Link>
     </div>
     <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-3 mb-5"}`}>
-    <Link to='product/:id' className='product-card position-relative'>
+    <Link to=':id' className='product-card position-relative'>
     <div className='wishlist-icon position-absolute'>
-    <Link><img src='images/wish.svg' alt='wishlist' /></Link>
+    <Link><img src={Wishlist} alt='wishlist' /></Link>
     </div>
       <div className='product-image'>
-        <img src='images/equip3.jpg' alt='product'/>
+        <img src={Product16} alt='product'/>
       </div>
       <div className='product-details'>
       <h6 className='brand'>Havels</h6>

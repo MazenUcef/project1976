@@ -1,6 +1,15 @@
 import React from 'react'
 import ReactStars from 'react-rating-stars-component'
 import {Link, useLocation} from 'react-router-dom'
+import Wishlist from '../images/wish.svg'
+import Product1 from '../images/product-1.jpg'
+import Product2 from '../images/f1.jpg'
+import Product3 from '../images/product-2.jpg'
+import Product4 from '../images/f2.jpg'
+import Prodcomparer from '../images/prodcompare.svg'
+import View from '../images/view.svg'
+import AddCart from '../images/add-cart.svg'
+
 
 
 const SingleProdFeat = (props) => {
@@ -13,13 +22,13 @@ const {grid} = props
     };
   return (
 <>
-    <div className={`${location.pathname === '/product/:id'? `gr-${grid}` : "col-3"}`}>
+    <div className={`${location.pathname === '/product/:id'? 'col-3' : `gr-${grid}`}`}>
       <Link to='product/:id' className='product-card position-relative'>
       <div className='wishlist-icon position-absolute'>
-      <Link><img src='images/wish.svg' alt='wishlist' /></Link>
+      <Link><img src={Wishlist} alt='wishlist' /></Link>
       </div>
         <div className='product-image'>
-          <img src='images/product-1.jpg' alt='product'/>
+          <img src={Product1} alt='product'/>
         </div>
         <div className='product-details'>
         <h6 className='brand'>Havels</h6>
@@ -39,20 +48,20 @@ const {grid} = props
         </div>
         <div className='action-bar position-absolute'>
         <div className='d-flex flex-column'>
-        <Link><img src='images/prodcompare.svg' alt='prodcompare'/></Link>
-        <Link><img src='images/view.svg' alt='view'/></Link>
-        <Link><img src='images/add-cart.svg' alt='addcart'/></Link>
+        <Link><img src={Prodcomparer} alt='prodcompare'/></Link>
+        <Link><img src={View} alt='view'/></Link>
+        <Link><img src={AddCart} alt='addcart'/></Link>
         </div>
         </div>
       </Link>
     </div>
-    <div className={`${location.pathname === '/product/:id'? `gr-${grid}` : "col-3 mb-5"}`}>
+    <div className={`${location.pathname === '/product/:id'? 'col-3 mb-5' : `gr-${grid}`}`}>
       <Link to='product/:id' className='product-card position-relative'>
       <div className='wishlist-icon position-absolute'>
-      <Link><img src='images/wish.svg' alt='wishlist' /></Link>
+      <Link><img src={Wishlist} alt='wishlist' /></Link>
       </div>
         <div className='product-image'>
-          <img src='images/f1.jpg' alt='product'/>
+          <img src={Product2} alt='product'/>
         </div>
         <div className='product-details'>
         <h6 className='brand'>Havels</h6>
@@ -72,20 +81,20 @@ const {grid} = props
         </div>
         <div className='action-bar position-absolute'>
         <div className='d-flex flex-column'>
-        <Link><img src='images/prodcompare.svg' alt='prodcompare'/></Link>
-        <Link><img src='images/view.svg' alt='view'/></Link>
-        <Link><img src='images/add-cart.svg' alt='addcart'/></Link>
+        <Link><img src={Prodcomparer} alt='prodcompare'/></Link>
+        <Link><img src={View} alt='view'/></Link>
+        <Link><img src={AddCart} alt='addcart'/></Link>
         </div>
         </div>
       </Link>
     </div>
-    <div className={`${location.pathname === '/product/:id'? `gr-${grid}` : "col-3 mb-5"}`}>
+    <div className={`${location.pathname === '/product/:id'? 'col-3 mb-5' : `gr-${grid}`}`}>
       <Link to='product/:id' className='product-card position-relative'>
       <div className='wishlist-icon position-absolute'>
-      <Link><img src='images/wish.svg' alt='wishlist' /></Link>
+      <Link><img src={Wishlist} alt='wishlist' /></Link>
       </div>
         <div className='product-image'>
-          <img src='images/product-2.jpg' alt='product'/>
+          <img src={Product3} alt='product'/>
         </div>
         <div className='product-details'>
         <h6 className='brand'>Sony</h6>
@@ -104,20 +113,20 @@ const {grid} = props
         </div>
         <div className='action-bar position-absolute'>
         <div className='d-flex flex-column'>
-        <Link><img src='images/prodcompare.svg' alt='prodcompare'/></Link>
-        <Link><img src='images/view.svg' alt='view'/></Link>
-        <Link><img src='images/add-cart.svg' alt='addcart'/></Link>
+        <Link><img src={Prodcomparer} alt='prodcompare'/></Link>
+        <Link><img src={View} alt='view'/></Link>
+        <Link><img src={AddCart} alt='addcart'/></Link>
         </div>
         </div>
       </Link>
     </div>
-    <div className={`${location.pathname === '/product/:id'? `gr-${grid}` : "col-3 mb-5"}`}>
-    <Link to='product/:id' className='product-card position-relative'>
+    <div className={`${location.pathname === '/product/:id'? 'col-3 mb-5' : `gr-${grid}`}`}>
+    <Link to='product/:id' className='product-card position-relative single-prod'>
     <div className='wishlist-icon position-absolute'>
-    <Link><img src='images/wish.svg' alt='wishlist' /></Link>
+    <Link><img src={Wishlist} alt='wishlist' /></Link>
     </div>
       <div className='product-image'>
-        <img src='images/f2.jpg' alt='product'/>
+        <img src={Product4} alt='product'/>
       </div>
       <div className='product-details'>
       <h6 className='brand'>Havels</h6>
@@ -137,9 +146,9 @@ const {grid} = props
       </div>
       <div className='action-bar position-absolute'>
       <div className='d-flex flex-column'>
-      <Link><img src='images/prodcompare.svg' alt='prodcompare'/></Link>
-      <Link><img src='images/view.svg' alt='view'/></Link>
-      <Link><img src='images/add-cart.svg' alt='addcart'/></Link>
+      <Link><img src={Prodcomparer} alt='prodcompare'/></Link>
+      <Link><img src={View} alt='view'/></Link>
+      <Link><img src={AddCart} alt='addcart'/></Link>
       </div>
       </div>
     </Link>

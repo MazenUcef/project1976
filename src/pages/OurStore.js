@@ -54,12 +54,12 @@ return (
                         </div>
                         <h5 className='sub-title'>Price</h5>
                         <div className='d-flex align-items-center gap-10'>
-                            <form class="form-floating">
-                                <input type="email" class="form-control py-1" id="floatingInput" placeholder="from..." />
+                            <form className="form-floating">
+                                <input type="email" className="form-control py-1" id="floatingInput" placeholder="from..." />
                                 <label htmlFor="floatingInput">From</label>
                             </form>
-                            <form class="form-floating">
-                                <input type="email"  class="form-control py-1" id="floatingInput1" placeholder="to..." />
+                            <form className="form-floating">
+                                <input type="email"  className="form-control py-1" id="floatingInput1" placeholder="to..." />
                                 <label htmlFor="floatingInput1">To</label>
                             </form>
                         </div>
@@ -154,7 +154,7 @@ return (
                         <p className='mb-0' style={{width:'100px'}}>Sort By:</p>
                         <select name='sort-by' className='form-control form-select' id='sortBy'>
                             <option value='manual'>Featured</option>
-                            <option value='best-selling' selected='selected'>Best selling</option>
+                            <option value='best-selling' select='selected'>Best selling</option>
                             <option value='title-ascending'>Alphabetically, A-Z</option>
                             <option value='title-descending'>Alphabetically, Z-A</option>
                             <option value='price-ascending'>Price, low to high</option>

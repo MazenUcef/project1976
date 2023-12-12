@@ -3,7 +3,7 @@ import BreadCrum from '../components/BreadCrum'
 import Meta from '../components/Meta'
 import { Link } from 'react-router-dom'
 import { FaArrowLeft } from "react-icons/fa";
-
+import BlogBig1 from '../images/blog-big1.jpg'
 
 
 const BlogSingle = () => {
@@ -30,7 +30,7 @@ const BlogSingle = () => {
             <div className='col-9'>
                 <div className='single-blog-card'>
                     <h3 className='title'>A Beautiful Sunday Morning Renaissance</h3>
-                    <img className='img-fluid w-100 my-4' src='images/blog-big1.jpg' alt='blog'/>
+                    <img className='img-fluid w-100 my-4' src={BlogBig1} alt='blog'/>
                     <p>
                     You are only as good as your last collection,
                     which is an enormous pressure.
