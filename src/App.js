@@ -20,6 +20,7 @@ import TermAndCond from './pages/TermAndCond';
 import BlogSingle from './pages/BlogSingle';
 import ProductSingle from './pages/ProductSingle';
 import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
 
 
 
@@ -42,6 +43,7 @@ function App() {
     <Route path='signup' element={<Signup/>}/>
     <Route path='blog/:id' element={<BlogSingle/>}/>
     <Route path='cart' element={<Cart/>}/>
+    <Route path='checkout' element={<Checkout/>}/>
     <Route path='privacy-policy' element={<PrivacyPolicy/>}/>
     <Route path='refund-policy' element={<RefundPolicy/>}/>
     <Route path='shipping-policy' element={<ShippingPolicy/>}/>
