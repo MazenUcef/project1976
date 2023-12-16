@@ -3,6 +3,7 @@ import Meta from '../components/Meta'
 import BreadCrum from '../components/BreadCrum'
 import Color from '../components/Color'
 // import ReactStars from 'react-rating-stars-component'
+import Container from '../components/Container'
 
 
 
@@ -11,8 +12,8 @@ const CompareProduct = () => {
 <>
 <Meta title = {"Compare Products"} />
 <BreadCrum title ='Compare Products' />
-<div className='compare-product-wrapper home-wrapper-2 py-5'>
-    <div className='container-xxl'>
+<Container class1='compare-product-wrapper home-wrapper-2 py-5'>
+
         <div className='row'>
             <div className='col-3'>
                 <div className='compare-product-card position-relative'>
@@ -191,8 +192,8 @@ const CompareProduct = () => {
                 </div>
             </div>
         </div>
-    </div>
-</div>
+
+</Container>
 </>
   )
 }

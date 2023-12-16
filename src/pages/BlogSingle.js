@@ -4,6 +4,7 @@ import Meta from '../components/Meta'
 import { Link } from 'react-router-dom'
 import { FaArrowLeft } from "react-icons/fa";
 import BlogBig1 from '../images/blog-big1.jpg'
+import Container from '../components/Container';
 
 
 const BlogSingle = () => {
@@ -11,8 +12,8 @@ const BlogSingle = () => {
 <>
 <Meta title = {"Dynamic Blog Name"}/>
 <BreadCrum title ='Dynamic Blog Name'/>
-<div className='blog-wrapper home-wrapper-2 py-4'>
-    <div className='container-xxl'>
+<Container class1='blog-wrapper home-wrapper-2 py-4'>
+
         <div className='row'>
             <div className='col-3'>
                 <div className='filter-card mb-3'>
@@ -45,8 +46,8 @@ const BlogSingle = () => {
                 </div>
             </div>
         </div>
-    </div>
-</div>
+
+</Container>
 </>
   )
 }

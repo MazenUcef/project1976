@@ -1,6 +1,7 @@
 import React from 'react'
 import BreadCrum from '../components/BreadCrum'
 import Meta from '../components/Meta'
+import Container from '../components/Container'
 
 
 const ShippingPolicy = () => {
@@ -8,8 +9,8 @@ const ShippingPolicy = () => {
     <>
     <Meta title = {"Shipping Policy"}/>
     <BreadCrum title ='Shipping Policy'/>
-    <section className='policy-wrapper py-5 home-wrapper-2'>
-  <div className='container-xxl'>
+    <Container class1='policy-wrapper py-5 home-wrapper-2'>
+
     <div className='row'>
       <div className='col-12'>
         <div className='policy'>
@@ -17,8 +18,8 @@ const ShippingPolicy = () => {
         </div>
       </div>
     </div>
-  </div>
-</section>
+
+</Container>
     </>
   )
 }

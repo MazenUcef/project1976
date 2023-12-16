@@ -1,7 +1,7 @@
 import React from 'react'
 import BreadCrum from '../components/BreadCrum'
 import Meta from '../components/Meta'
-
+import Container from '../components/Container'
 
 
 const Wishlist = () => {
@@ -9,8 +9,8 @@ const Wishlist = () => {
 <>
 <Meta title = {"Wishlist"}/>
 <BreadCrum title ='Wishlist'/>
-<div className='Wishlist-wrapper home-wrapper-2 py-5'>
-    <div className='container-xxl'>
+<Container class1='Wishlist-wrapper home-wrapper-2 py-5'>
+
       <div className='row'>
         <div className='col-3'>
           <div className='wishlist-card position-relative'>
@@ -77,8 +77,8 @@ const Wishlist = () => {
         </div>
         </div>
       </div>
-    </div>
-</div>
+
+</Container>
 
 </>
   )

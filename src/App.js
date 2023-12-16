@@ -40,6 +40,7 @@ function App() {
     <Route path='wishlist' element={<Wishlist/>}/>
     <Route path='login' element={<Login/>}/>
     <Route path='forgot-password' element={<Forgotpass/>}/>
+    <Route path='reset-password' element={<Resetpass/>}/>
     <Route path='signup' element={<Signup/>}/>
     <Route path='blog/:id' element={<BlogSingle/>}/>
     <Route path='cart' element={<Cart/>}/>

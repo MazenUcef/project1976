@@ -5,6 +5,7 @@ import ReactStars from 'react-rating-stars-component'
 import { Link } from 'react-router-dom'
 import ProductCard from '../components/ProductCard'
 import Color from '../components/Color'
+import Container from '../components/Container'
 
 
 const OurStore = () => {
@@ -22,8 +23,8 @@ return (
 <>
 <Meta title = {"Our Store"} />
 <BreadCrum title ='Our Store' />
-<div className='store-wrapper py-5 home-wrapper-2'>
-    <div className='container-xxl'>
+<Container class1='store-wrapper py-5 home-wrapper-2'>
+
         <div className='row'>
             <div className='col-3'>
                 <div className='filter-card mb-3'>
@@ -181,8 +182,8 @@ return (
                 </div>
             </div>
         </div>
-    </div>
-</div>
+
+</Container>
 </>
   )
 }
