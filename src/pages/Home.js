@@ -18,7 +18,7 @@ const Home = () => {
     <Meta title = {"Project1976-E-Com"} />
       <Container class1='home-wrapper-1 py-5 main'>
         <div className='row'>
-          <div className='col-6'>
+          <div className='col-lg-6 col-sm-12'>
           <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-inner">
             <div className="carousel-item active">
@@ -54,17 +54,17 @@ const Home = () => {
       </button>
     </div>
           </div>
-          <div className='col-6'>
+          <div className='col-lg-6 col-sm-12 sl-banner'>
             <div className='d-flex flex-wrap gap-10 justify-content-between align-items-center'>
-            <div className='small-banner-content position-relative'>
+            <div className='col-sm-6 col-md-6 small-banner-content position-relative'>
             <img src='images/catbanner-01.jpg' className='img-fluid rounde-3' alt=''/>
             <div className='small-banner-contentt position-absolute '>
               <h4>BEST SALE</h4>
               <h5>Laptops  Max</h5>
               <p>From $1699.00 <br/>or $64.62/mo.</p>
             </div>
-          </div>
-          <div className='small-banner-content position-relative'>
+            </div>
+          <div className='col-sm-6 col-md-6 small-banner-content position-relative'>
           <img src='images/catbanner-02.jpg' className='img-fluid rounde-3' alt=''/>
           <div className='small-banner-contentt position-absolute '>
             <h4>15% OFF</h4>
@@ -72,7 +72,7 @@ const Home = () => {
             <p>Shop the latest band<br/>styles and colors.</p>
           </div>
           </div>
-          <div className='small-banner-content position-relative'>
+          <div className='col-sm-6 col-md-6 small-banner-content position-relative'>
           <img src='images/catbanner-03.jpg' className='img-fluid rounde-3' alt=''/>
           <div className='small-banner-contentt position-absolute '>
             <h4>NEW ARRIVAL</h4>
@@ -80,7 +80,7 @@ const Home = () => {
             <p>From $599 <br/>or $49.91/mo.</p>
           </div>
           </div>
-          <div className='small-banner-content position-relative'>
+          <div className='col-sm-6 col-md-6 small-banner-content position-relative'>
           <img src='images/catbanner-04.jpg' className='img-fluid rounde-3' alt=''/>
           <div className='small-banner-contentt position-absolute '>
             <h4>FREE ENGRAVING</h4>
@@ -99,7 +99,7 @@ const Home = () => {
         {
           services.map((i)=>{
             return(
-              <div className='d-flex align-items-center gap-10' key={i.id}>
+              <div className='d-flex align-items-center gap-10 service' key={i.id}>
               <img src={i.image} alt='services' />
               <div>
                 <h6>{i.title}</h6>

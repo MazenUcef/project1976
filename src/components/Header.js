@@ -9,10 +9,10 @@ const Header = () => {
       <header className='header-top-strip py-2'>
         <div className='container-xxl'>
           <div className='row'>
-            <div className='col-6'>
+            <div className='col-lg-6 col-md-6 col-sm-12'>
             <p className='text-title mb-0'>Free Shipping Over $100 & Free Returns</p>
             </div>
-            <div className='col-6'>
+            <div className='col-lg-6 col-md-6 col-sm-12'>
             <p className='text-end text-title mb-0'>Hotline: <Link className='text-title' href='tel:+201006574217'>+201006574217</Link></p>
             </div>
           </div>
@@ -21,12 +21,12 @@ const Header = () => {
       <header className='header-upper py-4'>
         <div className='container'>
           <div className='row align-items-center'>
-            <div className='col-2'>
+            <div className='col-lg-2 col-md-2 col-sm-12'>
               <h2>
                 <Link className='text-title' to='/'>Project-76</Link>
               </h2>
             </div>
-            <div className='col-5'>
+            <div className='col-lg-5 col-md-5 col-sm-12'>
               <div className="input-group">
               <input type="text" className="form-control py-2" 
               placeholder="Search Product here..." 
@@ -37,32 +37,32 @@ const Header = () => {
               </span>
               </div>
             </div>
-            <div className='col-5'>
+            <div className='col-lg-5 col-md-5 col-sm-12'>
             <div className='header-upper-links d-flex align-items-center justify-content-between'>
               <div>
               <Link to='/compare-product' className='d-flex align-items-center gap-10 text-white'>
               <img src='images/compare.svg' alt='commpare' />
-              <p className='mb-0 text-title dollar'>Compare <br/> Products</p>
+              <p className='mb-0 text-title text-brand dollar'>Compare<br/>Products</p>
               </Link>
               </div>
               <div>
               <Link to='/wishlist' className='d-flex align-items-center gap-10 text-white'>
               <img src='images/wishlist.svg' alt='whishlist'/>
-              <p className='mb-0 text-title dollar'>Favorite <br/> Whishlist</p>
+              <p className='mb-0 text-title text-brand dollar'>Favorite<br/>Whishlist</p>
               </Link>
               </div>
               <div>
               <Link to='/login' className='d-flex align-items-center gap-10 text-white'>
               <img src='images/user.svg' alt='user'/>
-              <p className='mb-0 text-title dollar'>Log in <br/> My Account</p>
+              <p className='mb-0 text-title text-brand dollar'>Log in<br/> Account</p>
               </Link>
               </div>
               <div>
               <Link to='/cart' className='d-flex align-items-center gap-10 text-white'>
-              <i className="fa-solid fa-cart-shopping fa-2xl text-title"></i>
+              <i className="fa-solid fa-cart-shopping fs-3 text-title"></i>
               <div className='d-flex flex-column'>
                 <span className='badge bg-white text-dark'>0</span>
-                <p className='text-title dollar mb-0'>$ 0,00</p>
+                <p className='text-title dollar mb-0 text-brand'>$ 0,00</p>
               </div>
               </Link>
               </div>
@@ -76,7 +76,6 @@ const Header = () => {
           <div className='row'>
             <div className='col-12'>
               <div className='menu-bottom d-flex align-items-center gap-30'>
-                <div>
                 <div className="dropdown">
                   <button className="btn btn-secondary dropdown-toggle bg-transparent border-0 gap-15 d-flex align-items-center" 
                   type="button" 
@@ -92,7 +91,7 @@ const Header = () => {
                     <li><Link className="dropdown-item text-white" to="">Something else here</Link></li>
                   </ul>
                 </div>
-                </div>
+                
                 <div className='menu-links'>
                 <div className='d-flex align-items-center gap-15'>
                 <NavLink className='text-title' to="/">Home</NavLink>
@@ -111,3 +110,11 @@ const Header = () => {
 }
 
 export default Header
+
+
+
+
+
+
+
+

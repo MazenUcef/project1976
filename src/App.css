@@ -77,9 +77,17 @@ a{
 .dollar{
   font-weight: 500;
 }
-.header-upper.header-upper-links img{
-  width: 35px;
-  height: 35px;
+.header-upper .header-upper-links img{
+  width: 30px;
+  height: 30px;
+}
+.header-upper .header-upper-links p{
+  font-size: 15px;
+}
+.header-upper .header-upper-links .badge{
+  width: 30px;
+  height: 20px;
+  margin-left: 10px;
 }
 .header-bottom{
   background-color: var(--color-b6aaaa-bg);
@@ -206,7 +214,7 @@ footer .input-group-text{
 }
 .small-banner-contentt p{
   font-size: 14px;
-  line-height: 22ox;
+  line-height: 22px;
   letter-spacing: 0.4;
 }
 .small-banner-content{
@@ -948,3 +956,178 @@ width: 48%;
   height: 20px;
 }
 /*end of checkut page */
+/* ============================================================================================== */
+/* start Media Query */
+@media (max-width:899px) {
+  .header-top-strip div div{
+    display: flex;
+    justify-content: center;
+  }
+  .header-upper .header-upper-links{
+    margin-top: 20px;
+  }
+  .header-upper .header-upper-links img{
+    width: 17px;
+    height: 17px;
+  }
+  .header-upper div div{
+    display: flex !important;
+    align-items: baseline;
+  }
+  .header-upper div div div h2 a{
+    font-size: 18px;
+    margin-top: 20px !important;
+  }
+  .header-upper .input-group input{
+    height: 35px !important;
+    margin-top: 10px;
+  }
+  .header-upper .input-group span{
+    height: 30px !important;
+  }
+  .seBtn{
+    height: 10px !important;
+  }
+  .header-upper .header-upper-links p{
+    font-size: 10px !important;
+  }
+  .header-upper .header-upper-links .badge{
+    width: 20px;
+    height: 20px;
+    padding: 1px;
+  }
+  .header-upper .header-upper-links i{
+    font-size: 15px !important;
+  }
+  .header-upper-links div .text-brand{
+    font-size: 12px;
+  } 
+  .header-bottom .menu-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home-wrapper-1 .sl-banner{
+    margin-top: 20px;
+  }
+    .small-banner-content{
+      width: 48%;
+    }
+    .small-banner-contentt h4{
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 0px;
+      color: var(--color-088178-el-col);
+      margin: 0 0 12px;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+    }
+    .small-banner-contentt h5{
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 30px;
+      padding: 0;
+      letter-spacing: -2px;
+      text-transform: none;
+    }
+    .small-banner-contentt p{
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: 0.4;
+    }
+    .home-wrapper-2 .service img{
+      width: 20px;
+      height: 20px;
+    }
+    .home-wrapper-2 .service h6{
+      font-size: 10px;
+      line-height: 0px;
+    }
+    .home-wrapper-2 .service p{
+      font-size: 10px;
+      line-height: 15px;
+    }
+}
+
+
+
+
+
+
+@media (max-width:477px) {
+  .header-top-strip div div{
+    display: flex;
+    justify-content: center;
+  }
+  .text-title{
+  margin-bottom: 10px;
+  }
+  .header-upper .header-upper-links{
+    margin-top: 20px;
+  }
+  .header-upper .header-upper-links img{
+    width: 20px;
+    height: 20px;
+  }
+  .header-upper .header-upper-links .badge{
+    width: 20px;
+    height: 20px;
+    padding: 1px;
+  }
+  .header-upper .header-upper-links i{
+    font-size: 15px !important;
+  }
+  .header-upper-links div .text-brand{
+    font-size: 12px;
+  } 
+  .main-banner-contentt h4{
+  font-size: 12px;
+  }
+  .main-banner-contentt h5{
+  font-size: 26px;
+  }
+  .main-banner-contentt p{
+  font-size: 14px;
+  }
+  .button{
+    padding: 10px;
+    font-size: 10px;
+  }
+  .small-banner-content{
+    width: 48%;
+  }
+  .small-banner-contentt h4{
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 0px;
+    color: var(--color-088178-el-col);
+    margin: 0 0 12px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+  }
+  .small-banner-contentt h5{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 15px;
+    padding: 0;
+    letter-spacing: -2px;
+    text-transform: none;
+  }
+  .small-banner-contentt p{
+    font-size: 6px;
+    line-height: 16px;
+    letter-spacing: 0.4;
+  }
+  .home-wrapper-2 .service img{
+    width: 10px;
+    height: 10px;
+  }
+  .home-wrapper-2 .service h6{
+    font-size: 5px;
+    line-height: 0px;
+  }
+  .home-wrapper-2 .service p{
+    font-size: 5px;
+    line-height: 5px;
+  }
+}

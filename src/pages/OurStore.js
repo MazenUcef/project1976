@@ -46,11 +46,11 @@ return (
                         <div>
                             <div className='form-check'>
                         <input className='form-check-input' type='checkbox' value='' id='' />
-                        <lable className='form-check-label' htmlFor=''>In Stock (1)</lable>
+                        <label className='form-check-label' htmlFor=''>In Stock (1)</label>
                             </div>
                             <div className='form-check'>
                                 <input className='form-check-input' type='checkbox' value='' id=''/>
-                                <lable className='form-check-label' htmlFor=''>Out of Stock</lable>
+                                <label className='form-check-label' htmlFor=''>Out of Stock</label>
                             </div>
                         </div>
                         <h5 className='sub-title'>Price</h5>
@@ -72,19 +72,19 @@ return (
                         <div>
                         <div className='form-check'>
                             <input className='form-check-input' type='checkbox' value='' id='color-1' />
-                            <lable className='form-check-label' htmlFor='color-1'>S(2)</lable>
+                            <label className='form-check-label' htmlFor='color-1'>S(2)</label>
                         </div>
                         <div className='form-check'>
                             <input className='form-check-input' type='checkbox' value='' id='color-1' />
-                            <lable className='form-check-label' htmlFor='color-2'>M(0)</lable>
+                            <label className='form-check-label' htmlFor='color-2'>M(0)</label>
                         </div>
                         <div className='form-check'>
                             <input className='form-check-input' type='checkbox' value='' id='color-1' />
-                            <lable className='form-check-label' htmlFor='color-3'>XL(0)</lable>
+                            <label className='form-check-label' htmlFor='color-3'>XL(0)</label>
                         </div>
                         <div className='form-check'>
                             <input className='form-check-input' type='checkbox' value='' id='color-1' />
-                            <lable className='form-check-label' htmlFor='color-4'>XXL(0)</lable>
+                            <label className='form-check-label' htmlFor='color-4'>XXL(0)</label>
                         </div>
                         </div>
                     </div>
@@ -153,7 +153,7 @@ return (
                     <div className='d-flex justify-content-between align-items-center'>
                     <div className='d-flex align-items-center gap-10'>
                         <p className='mb-0' style={{width:'100px'}}>Sort By:</p>
-                        <select name='sort-by' className='form-control form-select' id='sortBy'>
+                        <select defaultValue={'DEFAULT'} name='sort-by' className='form-control form-select' id='sortBy'>
                             <option value='manual'>Featured</option>
                             <option value='best-selling' select='selected'>Best selling</option>
                             <option value='title-ascending'>Alphabetically, A-Z</option>

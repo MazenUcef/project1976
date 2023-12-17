@@ -4,7 +4,7 @@ const BlogCard = () => {
     const location = useLocation() 
   return (
     <>
-    <div className={`${location.pathname === '/blogs' ?  'col-6' : 'col-3' }`}>
+    <div className={`${location.pathname === '/blogs' ?  'col-lg-6 col-md-12 col-sm-12' : 'col-3' }`}>
         <div className={`${location.pathname === '/blogs' ?  'blog-card secBlog' : 'blog-card'}`}>
             <div className='card-image'>
                 <img id='img' src='images/blog-1.jpg' className='img-fluid' alt='blog'/>
@@ -18,7 +18,7 @@ const BlogCard = () => {
             </div>
         </div>
     </div>
-    <div className={`${location.pathname === '/blogs' ?  'col-6' : 'col-3' }`}>
+    <div className={`${location.pathname === '/blogs' ?  'col-lg-6 col-md-12 col-sm-12' : 'col-3' }`}>
         <div className={`${location.pathname === '/blogs' ?  'blog-card secBlog' : 'blog-card'}`}>
             <div className='card-image'>
                 <img id='img' src='images/blog-2.jpg' className='img-fluid' alt='blog'/>
@@ -32,7 +32,7 @@ const BlogCard = () => {
             </div>
         </div>
     </div>
-    <div className={`${location.pathname === '/blogs' ?  'col-6' : 'col-3' }`}>
+    <div className={`${location.pathname === '/blogs' ?  'col-lg-6 col-md-12 col-sm-12' : 'col-3' }`}>
         <div className={`${location.pathname === '/blogs' ?  'blog-card secBlog' : 'blog-card'}`}>
             <div className='card-image'>
                 <img id='img' src='images/blog-3.jpg' className='img-fluid' alt='blog'/>
@@ -46,7 +46,7 @@ const BlogCard = () => {
             </div>
         </div>
     </div>
-    <div className={`${location.pathname === '/blogs' ?  'col-6' : 'col-3' }`}>
+    <div className={`${location.pathname === '/blogs' ?  'col-lg-6 col-md-12 col-sm-12' : 'col-3' }`}>
         <div className={`${location.pathname === '/blogs' ?  'blog-card secBlog' : 'blog-card'}`}>
             <div className='card-image'>
                 <img id='img' src='images/blog-4.jpg' className='img-fluid' alt='blog'/>

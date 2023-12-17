@@ -3,13 +3,13 @@ export const services = [
         id:1,
         image:"images/service.png",
         title:"Free Shipping",
-        tagline:"From all order over $100",
+        tagline:"From all order over any place $100",
     },
     {
         id:2,
         image:"images/service-02.png",
         title:"Daily Surprise Offers",
-        tagline:"Save up to 25% off",
+        tagline:"Save up to 25% off Hurry up",
     },
     {
         id:3,
