@@ -8,7 +8,7 @@ const SpecialProducts = () => {
     };
   return (
     <>
-    <div className='col-4 my-4'>
+    <div className='col-lg-4 col-md-6 col-sm-12 my-4'>
         <div className='special-product-card'>
             <div className='d-flex justify-content-between'>
                 <div className=''>
@@ -59,7 +59,7 @@ const SpecialProducts = () => {
             </div>
         </div>
     </div>
-    <div className='col-4 my-4'>
+    <div className='col-lg-4 col-md-6 col-sm-12 my-4'>
         <div className='special-product-card'>
             <div className='d-flex justify-content-between'>
                 <div className=''>
@@ -110,7 +110,7 @@ const SpecialProducts = () => {
             </div>
         </div>
     </div>
-    <div className='col-4 my-4'>
+    <div className='col-lg-4 col-md-6 col-sm-12 my-4'>
         <div className='special-product-card'>
             <div className='d-flex justify-content-between'>
                 <div className=''>
@@ -161,7 +161,7 @@ const SpecialProducts = () => {
             </div>
         </div>
     </div>
-    <div className='col-4 my-4'>
+    <div className='col-lg-4 col-md-6 col-sm-12 my-4'>
     <div className='special-product-card'>
     <div className='d-flex justify-content-between'>
         <div className=''>
@@ -212,7 +212,7 @@ const SpecialProducts = () => {
     </div>
 </div>
     </div>
-    <div className='col-4 my-4'>
+    <div className='col-lg-4 col-md-6 col-sm-12 my-4'>
         <div className='special-product-card'>
             <div className='d-flex justify-content-between'>
                 <div className=''>
@@ -263,7 +263,7 @@ const SpecialProducts = () => {
             </div>
         </div>
     </div>
-    <div className='col-4 my-4'>
+    <div className='col-lg-4 col-md-6 col-sm-12 my-4'>
         <div className='special-product-card'>
             <div className='d-flex justify-content-between'>
                 <div className=''>

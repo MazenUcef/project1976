@@ -1047,6 +1047,17 @@ width: 48%;
       font-size: 10px;
       line-height: 15px;
     }
+    .categories h6{
+    font-size: 10px !important;
+    }
+    .categories p{
+    font-size: 8px !important;
+    }
+    .categories img{
+    width: 55px !important;
+    height: 50px !important;
+    }
+
 }
 
 

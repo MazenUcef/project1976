@@ -32,7 +32,7 @@ const {grid} = props
     };
   return (
     <> 
-    <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-3"}`}>
+    <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-lg-3 col-md-6 col-sm-12 mb-5"}`}>
       <Link to='/product/:id' className='product-card position-relative'>
       <div className='wishlist-icon position-absolute'>
       <button className='border-0 bg-transparent'><img src={Wishlist} alt='wishlist' /></button>
@@ -65,7 +65,7 @@ const {grid} = props
         </div>
       </Link>
     </div>
-    <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-3 mb-5"}`}>
+    <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-lg-3 col-md-6 col-sm-12 mb-5"}`}>
       <Link to='/product/:id' className='product-card position-relative'>
       <div className='wishlist-icon position-absolute'>
       <button className='border-0 bg-transparent'><img src={Wishlist} alt='wishlist' /></button>
@@ -98,7 +98,7 @@ const {grid} = props
         </div>
       </Link>
     </div>
-    <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-3 mb-5"}`}>
+    <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-lg-3 col-md-6 col-sm-12 mb-5"}`}>
     <Link to='/product/:id' className='product-card position-relative'>
       <div className='wishlist-icon position-absolute'>
       <button className='border-0 bg-transparent'><img src={Wishlist} alt='wishlist' /></button>
@@ -130,7 +130,7 @@ const {grid} = props
         </div>
       </Link>
     </div>
-    <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-3 mb-5"}`}>
+    <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-lg-3 col-md-6 col-sm-12 mb-5"}`}>
       <Link to='/product/:id' className='product-card position-relative'>
     <div className='wishlist-icon position-absolute'>
     <button className='border-0 bg-transparent'><img src={Wishlist} alt='wishlist' /></button>
@@ -163,7 +163,7 @@ const {grid} = props
       </div>
     </Link>
     </div>
-    <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-3 mb-5"}`}>
+    <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-lg-3 col-md-6 col-sm-12 mb-5"}`}>
         <Link to='/product/:id' className='product-card position-relative'>
       <div className='wishlist-icon position-absolute'>
       <button className='border-0 bg-transparent'><img src={Wishlist} alt='wishlist' /></button>
@@ -196,7 +196,7 @@ const {grid} = props
         </div>
       </Link>
     </div>
-    <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-3 mb-5"}`}>
+    <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-lg-3 col-md-6 col-sm-12 mb-5"}`}>
       <Link to='/product/:id' className='product-card position-relative'>
     <div className='wishlist-icon position-absolute'>
     <button className='border-0 bg-transparent'><img src={Wishlist} alt='wishlist' /></button>
@@ -229,7 +229,7 @@ const {grid} = props
       </div>
     </Link>
     </div>
-    <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-3 mb-5"}`}>
+    <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-lg-3 col-md-6 col-sm-12 mb-5"}`}>
         <Link to='/product/:id' className='product-card position-relative'>
       <div className='wishlist-icon position-absolute'>
       <button className='border-0 bg-transparent'><img src={Wishlist} alt='wishlist' /></button>
@@ -262,7 +262,7 @@ const {grid} = props
         </div>
       </Link>
     </div>
-    <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-3 mb-5"}`}>
+    <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-lg-3 col-md-6 col-sm-12 mb-5"}`}>
       <Link to='/product/:id' className='product-card position-relative'>
     <div className='wishlist-icon position-absolute'>
     <button className='border-0 bg-transparent'><img src={Wishlist} alt='wishlist' /></button>
@@ -295,7 +295,7 @@ const {grid} = props
       </div>
     </Link>
     </div>
-    <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-3 mb-5"}`}>
+    <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-lg-3 col-md-6 col-sm-12 mb-5"}`}>
     <Link to=':id' className='product-card position-relative'>
     <div className='wishlist-icon position-absolute'>
     <button className='border-0 bg-transparent'><img src={Wishlist} alt='wishlist' /></button>
@@ -328,7 +328,7 @@ const {grid} = props
       </div>
     </Link>
     </div>
-    <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-3 mb-5"}`}>
+    <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-lg-3 col-md-6 col-sm-12 mb-5"}`}>
       <Link to='/product/:id' className='product-card position-relative'>
     <div className='wishlist-icon position-absolute'>
     <Link><img src={Wishlist} alt='wishlist'/></Link>
@@ -361,7 +361,7 @@ const {grid} = props
       </div>
     </Link>
     </div>
-    <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-3 mb-5"}`}>
+    <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-lg-3 col-md-6 col-sm-12 mb-5"}`}>
       <Link to='/product/:id' className='product-card position-relative'>
     <div className='wishlist-icon position-absolute'>
     <button className='border-0 bg-transparent'><img src={Wishlist} alt='wishlist' /></button>
@@ -394,7 +394,7 @@ const {grid} = props
       </div>
     </Link>
     </div>
-    <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-3 mb-5"}`}>
+    <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-lg-3 col-md-6 col-sm-12 mb-5"}`}>
       <Link to='/product/:id' className='product-card position-relative'>
     <div className='wishlist-icon position-absolute'>
     <button className='border-0 bg-transparent'><img src={Wishlist} alt='wishlist' /></button>
@@ -427,7 +427,7 @@ const {grid} = props
       </div>
     </Link>
     </div>
-    <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-3 mb-5"}`}>
+    <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-lg-3 col-md-6 col-sm-12 mb-5"}`}>
       <Link to='/product/:id' className='product-card position-relative'>
     <div className='wishlist-icon position-absolute'>
     <button className='border-0 bg-transparent'><img src={Wishlist} alt='wishlist' /></button>
@@ -460,7 +460,7 @@ const {grid} = props
       </div>
     </Link>
     </div>
-    <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-3 mb-5"}`}>
+    <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-lg-3 col-md-6 col-sm-12 mb-5"}`}>
       <Link to='/product/:id' className='product-card position-relative'>
     <div className='wishlist-icon position-absolute'>
     <button className='border-0 bg-transparent'><img src={Wishlist} alt='wishlist' /></button>
@@ -493,7 +493,7 @@ const {grid} = props
       </div>
     </Link>
     </div>
-    <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-3 mb-5"}`}>
+    <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-lg-3 col-md-6 col-sm-12 mb-5"}`}>
       <Link to='/product/:id' className='product-card position-relative'>
     <div className='wishlist-icon position-absolute'>
     <button className='border-0 bg-transparent'><img src={Wishlist} alt='wishlist' /></button>
@@ -526,7 +526,7 @@ const {grid} = props
       </div>
     </Link>
     </div>
-    <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-3 mb-5"}`}>
+    <div className={`${location.pathname === '/product'? `gr-${grid}` : "col-lg-3 col-md-6 col-sm-12 mb-5"}`}>
       <Link to='/product/:id' className='product-card position-relative'>
     <div className='wishlist-icon position-absolute'>
     <button className='border-0 bg-transparent'><img src={Wishlist} alt='wishlist' /></button>

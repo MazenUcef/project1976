@@ -117,7 +117,7 @@ const Home = () => {
       <div className='row'>
       <div className='col-12'>
         <div className='categories d-flex justify-content-between flex-wrap align-items-center'>
-          <div className='d-flex gap-30 align-items-center'>
+          <div className='col-lg-3 col-md-6 col-sm-12 d-flex gap-30 align-items-center'>
             <div>
               <h6>Computers & Laptop</h6>
               <p>8 Items</p>
@@ -191,7 +191,7 @@ const Home = () => {
       </Container>
       <Container class1='famous-wrapper py-5 home-wrapper-2'>
       <div className='row'>
-      <div className='col-3'>
+      <div className='col-lg-3 col-md-6 col-sm-12 mb-5'>
         <div className='famous-card position-relative'>
         <img src='images/banner-watch.jpg' className='img-fluid' alt='banner'/>
         <div className='famous-content position-absolute'>
@@ -201,7 +201,7 @@ const Home = () => {
         </div>
         </div>
       </div>
-      <div className='col-3'>
+      <div className='col-lg-3 col-md-6 col-sm-12 mb-5'>
         <div className='famous-card position-relative'>
         <img src='images/laptop-banner.jpg'  className='img-fluid' alt='banner'/>
         <div className='famous-content position-absolute'>
@@ -211,7 +211,7 @@ const Home = () => {
         </div>
         </div>
       </div>
-      <div className='col-3'>
+      <div className='col-lg-3 col-md-6 col-sm-12 mb-5'>
         <div className='famous-card position-relative'>
         <img src='images/mobile-banner.jpg' className='img-fluid' alt='banner'/>
         <div className='famous-content position-absolute'>
@@ -221,7 +221,7 @@ const Home = () => {
         </div>
         </div>
       </div>
-      <div className='col-3'>
+      <div className='col-lg-3 col-md-6 col-sm-12 mb-5'>
         <div className='famous-card position-relative'>
         <img src='images/lamps-banner.jpg' className='img-fluid' alt='banner'/>
         <div className='famous-content position-absolute'>
@@ -252,7 +252,7 @@ const Home = () => {
       </div>
     </div>
     <div className='row'>
-      <div className='col-2'>
+      <div className='card col-lg-2 col-md-6 col-sm-12 mb-5'>
         <div className='card'>
           <Link className='card-content d-flex align-items-center'>
             <img src='images/watch7.jpg' alt='watch' />
@@ -268,7 +268,7 @@ const Home = () => {
           </Link>
         </div>
       </div>
-      <div className='col-2'>
+      <div className='col-lg-2 col-md-6 col-sm-12 mb-5'>
         <div className='card-img position-relative'>
         <img src='images/lamp.jpg' className='' alt='background'/>
         <div className='card-img-details position-absolute'>
@@ -278,14 +278,13 @@ const Home = () => {
         </div>
         </div>
       </div>
-      <div className='col-2'>
+      <div className='col-lg-2 col-md-6 col-sm-12 mb-5'>
       <div className='special-product-card card-special'>
-          <div className='d-flex justify-content-between'>
-              <div className=''>
-              </div>
+          <div className='card d-flex justify-content-between'>
+              
               <div className='special-product-content'>
               <h5 className='brand'>Casio</h5>
-              <h6 className='title'>Watch Elect-M12 RED<br/>Watch Screen...</h6>
+              <h6 className='title'>Watch Elect-M12 RED Watch home Screen...</h6>
               <ReactStars
               count={5}
               onChange={ratingChanged}
@@ -326,14 +325,12 @@ const Home = () => {
           </div>
       </div>
       </div>
-      <div className='col-2'>
+      <div className='col-lg-2 col-md-6 col-sm-12 mb-5'>
       <div className='special-product-card'>
-      <div className='d-flex justify-content-between'>
-          <div className=''>
-          </div>
+      <div className=' card d-flex justify-content-between'>
           <div className='special-product-content'>
           <h5 className='brand'>Toshiba</h5>
-          <h6 className='title'>TeleV flatScreen 15pxO<br/>3D Led Screen...</h6>
+          <h6 className='title'>TeleV flatScreen 15pxO 3D Led Screen...</h6>
           <ReactStars
           count={5}
           onChange={ratingChanged}
@@ -374,11 +371,9 @@ const Home = () => {
       </div>
   </div>
       </div>
-      <div className='col-2'>
+      <div className='col-lg-2 col-md-6 col-sm-12 mb-5'>
       <div className='special-product-card'>
-      <div className='d-flex justify-content-between'>
-          <div className=''>
-          </div>
+      <div className='card d-flex justify-content-between'>
           <div className='special-product-content'>
           <h5 className='brand'>Apple</h5>
           <h6 className='title'>AirPods SEC Gene HeadAir France with...</h6>
@@ -422,11 +417,10 @@ const Home = () => {
       </div>
   </div>
       </div>
-      <div className='col-2'>
+      <div className='col-lg-2 col-md-6 col-sm-12 mb-5'>
       <div className='special-product-card'>
-      <div className='d-flex justify-content-between'>
-          <div className=''>
-          </div>
+      <div className='card d-flex justify-content-between'>
+
           <div className='special-product-content'>
           <h5 className='brand'>Canon</h5>
           <h6 className='title'>Canon Session Action<br/>With 8MP...</h6>
